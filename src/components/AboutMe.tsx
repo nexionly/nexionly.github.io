@@ -1,7 +1,7 @@
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className="py-24 bg-gray-50">
+    <section id="about-me" className="py-24 bg-gray-50 dark:bg-gray-900/50">
       <div className="section-container">
         <div className="text-center mb-12">
           <span className="chip chip-accent mb-3">About Me</span>

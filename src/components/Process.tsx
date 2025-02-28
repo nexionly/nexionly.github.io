@@ -32,7 +32,7 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-24 bg-white">
+    <section id="process" className="py-24 bg-white dark:bg-gray-900">
       <div className="section-container">
         <div className="section-heading-container">
           <span className="chip chip-primary mb-3">Process</span>
@@ -51,7 +51,7 @@ const Process = () => {
                   className={`w-full text-left p-6 rounded-lg transition-all duration-300 ${
                     activeStep === index
                       ? "bg-brand-green-light border-l-4 border-brand-green"
-                      : "bg-gray-50 hover:bg-gray-100"
+                      : "bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
                   }`}
                   onClick={() => setActiveStep(index)}
                 >
@@ -69,7 +69,7 @@ const Process = () => {
           </div>
 
           <div className="md:col-span-5 animate-fade-in">
-            <div className="bg-gray-50 rounded-2xl p-8 md:p-12 h-full">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 h-full">
               <div className="mb-6">
                 <span className="text-6xl font-bold text-brand-green opacity-20">
                   {steps[activeStep].number}
@@ -81,7 +81,7 @@ const Process = () => {
               <p className="text-lg mb-6">
                 {steps[activeStep].description}
               </p>
-              <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-100 dark:border-gray-700">
                 <h4 className="font-medium mb-2">What this includes:</h4>
                 <p className="text-muted-foreground">
                   {steps[activeStep].details}

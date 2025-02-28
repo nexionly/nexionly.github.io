@@ -43,8 +43,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center bg-gradient-to-b from-white to-gray-50">
-      <div className="absolute top-0 left-0 right-0 bottom-0 opacity-5 bg-[url('/lovable-uploads/1a87ec0d-f067-460d-ac76-c28a97e9d984.png')] bg-center bg-no-repeat bg-cover" />
+    <section className="relative h-screen flex items-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
+      <div className="absolute top-0 left-0 right-0 bottom-0 opacity-5 dark:opacity-10 bg-[url('/lovable-uploads/1a87ec0d-f067-460d-ac76-c28a97e9d984.png')] bg-center bg-no-repeat bg-cover" />
       <div className="section-container flex flex-col items-center text-center">
         <div className="max-w-4xl mx-auto animate-fade-up">
           <div className="mb-4">

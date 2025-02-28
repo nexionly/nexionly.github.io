@@ -39,7 +39,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gray-50">
+    <section id="services" className="py-24 bg-gray-50 dark:bg-gray-900/30">
       <div className="section-container">
         <div className="section-heading-container">
           <span className="chip chip-accent mb-3">Services</span>

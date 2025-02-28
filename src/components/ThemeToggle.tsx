@@ -32,7 +32,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary hover:bg-brand-pink/10 transition-colors duration-300"
+      className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary dark:bg-gray-800 hover:bg-brand-pink/10 transition-colors duration-300"
       aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
     >
       {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}

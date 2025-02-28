@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-white dark:bg-gray-900">
       <div className="section-container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in-left">
@@ -30,21 +30,21 @@ const About = () => {
             </p>
             
             <div className="space-y-4 mb-8">
-              <div className="bg-gray-50 p-5 rounded-lg border border-gray-100">
+              <div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg border border-gray-100 dark:border-gray-700">
                 <h3 className="font-medium text-lg mb-2">Strategic CX Leadership</h3>
                 <p className="text-muted-foreground">
                   I guide founders in building proactive CX teams that drive growth and customer loyalty.
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-5 rounded-lg border border-gray-100">
+              <div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg border border-gray-100 dark:border-gray-700">
                 <h3 className="font-medium text-lg mb-2">B2B SaaS Expertise</h3>
                 <p className="text-muted-foreground">
                   Specialized experience with B2B SaaS companies, particularly in the post-Series A growth phase.
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-5 rounded-lg border border-gray-100">
+              <div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg border border-gray-100 dark:border-gray-700">
                 <h3 className="font-medium text-lg mb-2">Data-Driven Approach</h3>
                 <p className="text-muted-foreground">
                   Turn customer insights into actionable strategies that scale with your business.

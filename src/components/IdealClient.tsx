@@ -10,7 +10,7 @@ const IdealClient = () => {
   ];
 
   return (
-    <section id="ideal-client" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="ideal-client" className="py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900/50 dark:to-gray-900">
       <div className="section-container">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -22,7 +22,7 @@ const IdealClient = () => {
           </div>
 
           <div className="glass-card rounded-xl p-8 md:p-10 animate-fade-up">
-            <h3 className="text-xl font-bold mb-6 border-b pb-4">Ideal Customer Profile</h3>
+            <h3 className="text-xl font-bold mb-6 border-b pb-4 dark:border-gray-700">Ideal Customer Profile</h3>
             <div className="space-y-4">
               {clientCriteria.map((criteria, index) => (
                 <div key={index} className="flex items-start">
@@ -32,7 +32,7 @@ const IdealClient = () => {
               ))}
             </div>
 
-            <div className="mt-8 pt-6 border-t">
+            <div className="mt-8 pt-6 border-t dark:border-gray-700">
               <h4 className="font-medium mb-3">Is this you?</h4>
               <p className="text-muted-foreground mb-6">
                 If your company fits this profile, my specialized expertise can help you build a customer experience function that drives sustainable growth and creates lasting customer loyalty.
