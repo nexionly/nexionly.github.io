@@ -7,22 +7,19 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      quote: "Tomas has a strategic mind for building and scaling effective customer-focused operations that truly drive business growth.",
-      name: "Sarah Johnson",
-      title: "Co-founder & CEO, CloudStack",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
+      quote: "One of Tomas' key strengths is his leadership ability. He has a natural talent for guiding teams and inspiring collaboration, always keeping a customer-first mindset.",
+      name: "Matteo Perretta",
+      title: "Sr. Sales Enablement Leader",
     },
     {
-      quote: "Working with Tomas transformed how we think about customer experience. His holistic approach connects CX to every part of our business strategy.",
-      name: "Michael Chang",
-      title: "Founder, DataSync",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
+      quote: "Tomas was someone I could always rely on—whether it was for problem-solving, big-picture strategy, or just keeping everything (and everyone) moving forward. He was the glue for our culture, keeping the team connected and motivated.",
+      name: "Marie Yatco",
+      title: "VP, Customer Experience, Kindsight",
     },
     {
-      quote: "Tomas doesn't just solve today's CX problems – he builds systems that scale and adapt for tomorrow's challenges. His vision has been invaluable to our growth.",
-      name: "Rachel Torres",
-      title: "CTO, TechFlow Solutions",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
+      quote: "He has an exceptional ability to connect with people across all levels and departments, using these relationships to really understand challenges before crafting solutions.",
+      name: "Sherman Hui",
+      title: "Software Engineer, Procurify",
     }
   ];
 
@@ -41,7 +38,7 @@ const Testimonials = () => {
           <span className="chip chip-accent mb-3">Testimonials</span>
           <h2 className="section-title">What People Say About Tomas</h2>
           <p className="section-subtitle">
-            Perspectives from founders and leaders I've worked with
+            Perspectives from colleagues and professionals I've worked with
           </p>
         </div>
 
@@ -64,13 +61,6 @@ const Testimonials = () => {
                   "{testimonial.quote}"
                 </p>
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 rounded-full overflow-hidden mb-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
                   <p className="font-bold">{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                 </div>
