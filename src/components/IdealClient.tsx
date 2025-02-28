@@ -37,7 +37,12 @@ const IdealClient = () => {
               <p className="text-muted-foreground mb-6">
                 If your company fits this profile, my specialized expertise can help you build a customer experience function that drives sustainable growth and creates lasting customer loyalty.
               </p>
-              <a href="#contact" className="btn-secondary">
+              <a 
+                href="https://cal.com/tomas-williams" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-secondary"
+              >
                 Let's Talk About Your Needs
               </a>
             </div>

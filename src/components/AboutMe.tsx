@@ -35,7 +35,7 @@ const AboutMe = () => {
             </p>
             <div className="pt-4">
               <a 
-                href="https://www.linkedin.com/in/tomaswilliamsa/" 
+                href="https://cal.com/tomas-williams" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-primary"
