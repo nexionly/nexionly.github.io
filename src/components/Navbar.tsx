@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm py-3"
+          ? "bg-white/90 backdrop-blur-md shadow-sm py-3 dark:bg-gray-900/90"
           : "bg-transparent py-5"
       }`}
     >
@@ -53,28 +54,32 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
+          <ThemeToggle />
           <a
             href="https://cal.com/tomas-williams"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary text-sm"
+            className="btn-primary text-sm hover:scale-105 transition-transform duration-300"
           >
             Book a Call
           </a>
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-gray-700"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <ThemeToggle />
+          <button
+            className="text-gray-700 dark:text-gray-300"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white absolute top-full left-0 right-0 shadow-md py-4 px-6 animate-fade-in">
+        <div className="md:hidden bg-white dark:bg-gray-900 absolute top-full left-0 right-0 shadow-md py-4 px-6 animate-fade-in">
           <nav className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <a
@@ -90,7 +95,7 @@ const Navbar = () => {
               href="https://cal.com/tomas-williams"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary text-sm inline-block text-center"
+              className="btn-primary text-sm inline-block text-center hover:scale-105 transition-transform duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Book a Call
