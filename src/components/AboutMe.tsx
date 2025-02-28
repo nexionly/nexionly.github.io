@@ -31,11 +31,11 @@ const AboutMe = () => {
               I'm passionate about helping Series-A founders establish customer experience as a strategic function within their organizations. My approach combines empathy, data-driven insights, and practical strategies that drive growth.
             </p>
             <p className="text-lg text-muted-foreground">
-              When I'm not advising founders, you might find me exploring new technologies, mentoring CX professionals, or sharing insights at industry events.
+              When I'm not advising founders, you might find me exploring new places around the globe, taking photos, swimming with fishes or enjoying a slow start to the day with a walk on the Vancouver seawall.
             </p>
             <div className="pt-4">
               <a 
-                href="https://cal.com/tomas-williams" 
+                href="https://www.linkedin.com/in/tomaswilliamsa/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-primary"
