@@ -2,6 +2,13 @@
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative h-screen flex items-center bg-gradient-to-b from-white to-gray-50">
       <div className="absolute top-0 left-0 right-0 bottom-0 opacity-5 bg-[url('/lovable-uploads/1a87ec0d-f067-460d-ac76-c28a97e9d984.png')] bg-center bg-no-repeat bg-cover" />
@@ -21,20 +28,26 @@ const Hero = () => {
               href="https://cal.com/tomas-williams" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn-primary"
+              className="btn-primary transition-transform duration-300 hover:scale-105"
             >
               Book a Call
             </a>
-            <a href="#services" className="btn-outline">
+            <button 
+              onClick={() => scrollToSection('services')}
+              className="btn-outline transition-transform duration-300 hover:scale-105"
+            >
               Learn More
-            </a>
+            </button>
           </div>
         </div>
       </div>
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
-        <a href="#about" className="text-muted-foreground hover:text-brand-pink transition-colors">
+        <button 
+          onClick={() => scrollToSection('about')}
+          className="text-muted-foreground hover:text-brand-pink transition-colors"
+        >
           <ArrowDown size={24} />
-        </a>
+        </button>
       </div>
     </section>
   );
