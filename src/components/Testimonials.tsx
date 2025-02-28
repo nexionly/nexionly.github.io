@@ -7,19 +7,19 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      quote: "Matte helped us transform our chaotic customer support into a strategic CX operation that's now one of our key competitive advantages.",
+      quote: "Tomas has a strategic mind for building and scaling effective customer-focused operations that truly drive business growth.",
       name: "Sarah Johnson",
       title: "Co-founder & CEO, CloudStack",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
     },
     {
-      quote: "Our customer retention has increased by 32% since implementing the CX strategy that Matte developed for us. The ROI has been incredible.",
+      quote: "Working with Tomas transformed how we think about customer experience. His holistic approach connects CX to every part of our business strategy.",
       name: "Michael Chang",
       title: "Founder, DataSync",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
     },
     {
-      quote: "What sets Matte apart is his ability to create systems that scale with your business. He doesn't just solve today's problems – he prepares you for tomorrow's growth.",
+      quote: "Tomas doesn't just solve today's CX problems – he builds systems that scale and adapt for tomorrow's challenges. His vision has been invaluable to our growth.",
       name: "Rachel Torres",
       title: "CTO, TechFlow Solutions",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
@@ -39,9 +39,9 @@ const Testimonials = () => {
       <div className="section-container">
         <div className="section-heading-container">
           <span className="chip chip-accent mb-3">Testimonials</span>
-          <h2 className="section-title">What Clients Say</h2>
+          <h2 className="section-title">What People Say About Tomas</h2>
           <p className="section-subtitle">
-            Results and perspectives from founders I've worked with
+            Perspectives from founders and leaders I've worked with
           </p>
         </div>
 

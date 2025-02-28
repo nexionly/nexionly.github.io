@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div>
             <div className="text-xl font-bold mb-2">
-              Matte Green<span className="text-brand-pink">.</span>
+              Tomas Williams<span className="text-brand-pink">.</span>
             </div>
             <p className="text-muted-foreground text-sm mb-4 md:mb-0">
               CX Consultancy & Advisory for Series-A Founders
@@ -35,7 +35,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-100 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {currentYear} Matte Green Media. All rights reserved.
+            © {currentYear} Tomas Williams. All rights reserved.
           </div>
           
           <div className="flex space-x-6">
@@ -45,7 +45,12 @@ const Footer = () => {
             <a href="#" className="text-sm text-muted-foreground hover:text-brand-pink transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-brand-pink transition-colors">
+            <a 
+              href="https://linkedin.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-brand-pink transition-colors"
+            >
               LinkedIn
             </a>
           </div>

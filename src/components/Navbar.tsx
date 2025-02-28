@@ -24,7 +24,6 @@ const Navbar = () => {
     { name: "Services", href: "#services" },
     { name: "Process", href: "#process" },
     { name: "Ideal Client", href: "#ideal-client" },
-    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -37,7 +36,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="text-xl font-bold">
-          Matte Green
+          Tomas Williams
           <span className="text-brand-pink">.</span>
         </a>
 
@@ -53,7 +52,9 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://cal.com/tomas-williams"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary text-sm"
           >
             Book a Call
@@ -84,7 +85,9 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#contact"
+              href="https://cal.com/tomas-williams"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary text-sm inline-block text-center"
               onClick={() => setIsMenuOpen(false)}
             >
