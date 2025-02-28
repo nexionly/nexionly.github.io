@@ -37,7 +37,7 @@
 
     --radius: 0.5rem;
     
-    /* Brand colors */
+    /* Brand colors in light mode */
     --brand-pink: 328 100% 69%;
     --brand-pink-light: 328 100% 95%;
     --brand-pink-dark: 328 40% 57%;
@@ -49,6 +49,49 @@
     --brand-blue: 194 68% 64%;
     --brand-blue-light: 194 100% 95%;
     --brand-blue-dark: 194 40% 51%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    
+    /* Brand colors in dark mode - brighter and more vibrant */
+    --brand-pink: 328 100% 76%;
+    --brand-pink-light: 328 30% 25%;
+    --brand-pink-dark: 328 100% 85%;
+    
+    --brand-green: 154 70% 60%;
+    --brand-green-light: 154 30% 25%;
+    --brand-green-dark: 154 70% 70%;
+    
+    --brand-blue: 194 80% 70%;
+    --brand-blue-light: 194 30% 25%;
+    --brand-blue-dark: 194 80% 80%;
   }
 
   * {
@@ -71,7 +114,7 @@
 
   /* Custom classes */
   .glass-card {
-    @apply bg-white/90 backdrop-blur-sm border border-white/20 shadow-sm transition-colors duration-300;
+    @apply bg-white/90 backdrop-blur-sm border border-white/20 shadow-sm dark:bg-gray-800/90 dark:border-gray-700/20 transition-colors duration-300;
   }
 
   .section-container {
@@ -99,7 +142,7 @@
   }
 
   .btn-outline {
-    @apply border border-brand-pink text-brand-pink font-medium rounded-full px-6 py-3 hover:bg-brand-pink hover:text-white transition-colors duration-300 inline-flex items-center;
+    @apply border border-brand-pink text-brand-pink font-medium rounded-full px-6 py-3 hover:bg-brand-pink hover:text-white transition-colors duration-300 inline-flex items-center dark:text-brand-pink dark:hover:text-white;
   }
 
   .chip {
@@ -107,14 +150,14 @@
   }
 
   .chip-primary {
-    @apply bg-brand-green-light text-brand-green-dark;
+    @apply bg-brand-green-light text-brand-green-dark dark:bg-brand-green-light dark:text-brand-green-dark;
   }
 
   .chip-secondary {
-    @apply bg-brand-blue-light text-brand-blue-dark;
+    @apply bg-brand-blue-light text-brand-blue-dark dark:bg-brand-blue-light dark:text-brand-blue-dark;
   }
 
   .chip-accent {
-    @apply bg-brand-pink-light text-brand-pink-dark;
+    @apply bg-brand-pink-light text-brand-pink-dark dark:bg-brand-pink-light dark:text-brand-pink-dark;
   }
 }
