@@ -53,26 +53,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				},
 				brand: {
-					pink: '#FF6AC2',
-					'pink-light': '#FFE5F5',
-					'pink-dark': '#CC55A0',
-					green: '#4AC284',
-					'green-light': '#EBFFF5',
-					'green-dark': '#329463',
-					blue: '#61C6E4',
-					'blue-light': '#E5F8FF',
-					'blue-dark': '#4D9EB7'
+					pink: 'hsl(var(--brand-pink))',
+					'pink-light': 'hsl(var(--brand-pink-light))',
+					'pink-dark': 'hsl(var(--brand-pink-dark))',
+					green: 'hsl(var(--brand-green))',
+					'green-light': 'hsl(var(--brand-green-light))',
+					'green-dark': 'hsl(var(--brand-green-dark))',
+					blue: 'hsl(var(--brand-blue))',
+					'blue-light': 'hsl(var(--brand-blue-light))',
+					'blue-dark': 'hsl(var(--brand-blue-dark))'
 				}
 			},
 			borderRadius: {
