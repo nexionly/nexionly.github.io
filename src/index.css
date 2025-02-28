@@ -51,6 +51,11 @@
     scroll-behavior: smooth;
   }
 
+  /* Section target fix for fixed header */
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+
   /* Custom classes */
   .glass-card {
     @apply bg-white/90 backdrop-blur-sm border border-white/20 shadow-sm;

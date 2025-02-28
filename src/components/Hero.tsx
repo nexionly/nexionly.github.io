@@ -1,11 +1,44 @@
 
 import { ArrowDown } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const Hero = () => {
+  // Reference to store the navbar height
+  const navbarHeightRef = useRef(0);
+
+  // Effect to measure navbar height on component mount and window resize
+  useEffect(() => {
+    const updateNavbarHeight = () => {
+      const navbar = document.querySelector('header');
+      if (navbar) {
+        navbarHeightRef.current = navbar.getBoundingClientRect().height;
+      }
+    };
+
+    // Initial measurement
+    updateNavbarHeight();
+    
+    // Update on resize
+    window.addEventListener('resize', updateNavbarHeight);
+    
+    return () => window.removeEventListener('resize', updateNavbarHeight);
+  }, []);
+
+  // Enhanced scroll function with offset for fixed header
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    try {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const offsetTop = section.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+          top: offsetTop - navbarHeightRef.current - 20, // Additional 20px for spacing
+          behavior: 'smooth'
+        });
+      } else {
+        console.warn(`Section with ID "${sectionId}" not found.`);
+      }
+    } catch (error) {
+      console.error("Error scrolling to section:", error);
     }
   };
 
@@ -28,13 +61,16 @@ const Hero = () => {
               href="https://cal.com/tomas-williams" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn-primary transition-transform duration-300 hover:scale-105"
+              className="btn-primary transition-transform duration-300 hover:scale-105 z-10 relative"
+              role="button"
+              aria-label="Book a call with Tomas Williams"
             >
               Book a Call
             </a>
             <button 
               onClick={() => scrollToSection('services')}
-              className="btn-outline transition-transform duration-300 hover:scale-105"
+              className="btn-outline transition-transform duration-300 hover:scale-105 z-10 relative"
+              aria-label="Learn more about our services"
             >
               Learn More
             </button>
@@ -44,7 +80,8 @@ const Hero = () => {
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
         <button 
           onClick={() => scrollToSection('about')}
-          className="text-muted-foreground hover:text-brand-pink transition-colors"
+          className="text-muted-foreground hover:text-brand-pink transition-colors z-10 relative"
+          aria-label="Scroll down to about section"
         >
           <ArrowDown size={24} />
         </button>
