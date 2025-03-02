@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
@@ -27,6 +26,7 @@ const Navbar = () => {
     { name: "Methodology", href: "#methodology" },
     { name: "About Me", href: "#about-me" },
     { name: "Ideal Client", href: "#ideal-client" },
+    { name: "Newsletter", href: "#newsletter" },
   ];
 
   return (
