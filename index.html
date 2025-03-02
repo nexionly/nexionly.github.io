@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomas Williams | CX Consultancy & Advisory</title>
+    <meta name="description" content="Helping Series-A founders build exceptional customer experiences that drive growth and loyalty." />
+    <meta name="author" content="Tomas Williams" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tomaswilliams.com/" />
+    <meta property="og:title" content="Tomas Williams | CX Consultancy & Advisory" />
+    <meta property="og:description" content="Helping Series-A founders build exceptional customer experiences that drive growth and loyalty." />
+    <meta property="og:image" content="/lovable-uploads/ff28b6a5-5451-42fa-bcc2-3ef5190dd6be.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tomaswilliams.com/" />
+    <meta property="twitter:title" content="Tomas Williams | CX Consultancy & Advisory" />
+    <meta property="twitter:description" content="Helping Series-A founders build exceptional customer experiences that drive growth and loyalty." />
+    <meta property="twitter:image" content="/lovable-uploads/ff28b6a5-5451-42fa-bcc2-3ef5190dd6be.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/lovable-uploads/74f75633-75ad-4230-a0a3-2f50d241b52a.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Theme script to avoid flash of incorrect theme -->
+    <script>
+      // Check for saved theme preference or use the system preference
+      const userTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      
+      // Set the theme based on the preference
+      const theme = userTheme || systemTheme;
+      
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    
+    <!-- Script for GitHub Pages SPA routing -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/assets/index-CecVy4lk.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BTuwUSMG.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>
