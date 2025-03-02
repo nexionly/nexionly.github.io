@@ -105,13 +105,13 @@ const Methodology = () => {
 
         <div className="mt-12">
           <Tabs defaultValue="customer-centricity" className="w-full" onValueChange={setActiveTab}>
-            <div className="mb-8 overflow-x-auto">
-              <TabsList className="inline-flex min-w-full sm:w-auto p-1 bg-muted">
+            <div className="mb-8">
+              <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent">
                 {principles.map((principle) => (
                   <TabsTrigger 
                     key={principle.id} 
                     value={principle.id}
-                    className="text-sm py-3 px-4 whitespace-nowrap"
+                    className="text-sm py-3 px-4 whitespace-nowrap bg-muted"
                   >
                     <span className="mr-2">{principle.icon}</span>
                     {principle.title.split(" ")[0]}
