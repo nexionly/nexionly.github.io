@@ -105,17 +105,33 @@ const Methodology = () => {
 
         <div className="mt-8 md:mt-12">
           <Tabs defaultValue="customer-centricity" className="w-full" onValueChange={setActiveTab}>
-            <div className="mb-6 md:mb-8 overflow-hidden">
+            {/* Mobile-specific horizontal scrollable tabs */}
+            <div className="block md:hidden mb-6 overflow-x-auto pb-2 no-scrollbar">
+              <TabsList className="inline-flex w-max space-x-2 bg-transparent">
+                {principles.map((principle) => (
+                  <TabsTrigger 
+                    key={principle.id} 
+                    value={principle.id}
+                    className="flex items-center whitespace-nowrap bg-muted text-xs py-2 px-3"
+                  >
+                    <span className="mr-1.5">{principle.icon}</span>
+                    <span>{principle.title.split(" ")[0]}</span>
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
+            
+            {/* Desktop tabs with wrap */}
+            <div className="hidden md:block mb-8">
               <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent">
                 {principles.map((principle) => (
                   <TabsTrigger 
                     key={principle.id} 
                     value={principle.id}
-                    className="text-xs md:text-sm py-2 md:py-3 px-3 md:px-4 whitespace-nowrap bg-muted"
+                    className="text-sm py-3 px-4 whitespace-nowrap bg-muted"
                   >
                     <span className="mr-2">{principle.icon}</span>
-                    <span className="hidden sm:inline">{principle.title.split(" ")[0]}</span>
-                    <span className="sm:hidden">{principle.icon}</span>
+                    {principle.title.split(" ")[0]}
                   </TabsTrigger>
                 ))}
               </TabsList>

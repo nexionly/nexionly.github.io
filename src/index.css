@@ -112,6 +112,16 @@
     scroll-margin-top: 6rem;
   }
 
+  /* Hide scrollbar but keep scrolling functionality */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+
   /* Custom classes */
   .glass-card {
     @apply bg-white/90 backdrop-blur-sm border border-white/20 shadow-sm dark:bg-gray-800/90 dark:border-gray-700/20 transition-colors duration-300;
