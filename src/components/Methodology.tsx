@@ -1,0 +1,168 @@
+
+import { useState } from "react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+const Methodology = () => {
+  const [activeTab, setActiveTab] = useState("customer-centricity");
+  
+  const principles = [
+    {
+      id: "customer-centricity",
+      title: "Customer-Centricity as the Core",
+      agileConnection: "Customer satisfaction through early and continuous delivery of valuable software.",
+      description: "The customer is not just a user; they are the central focus of all CX efforts. Every decision, iteration, and improvement should be guided by a deep understanding of customer needs, pain points, and desires.",
+      details: [
+        "Customer feedback is an integral part of every stage of the CX process",
+        "Actively seeking customer input and empathizing with their experiences",
+        "Prioritizing solutions that deliver genuine value"
+      ],
+      icon: "🎯"
+    },
+    {
+      id: "iterative-improvement",
+      title: "Iterative and Incremental Improvement",
+      agileConnection: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+      description: "Instead of implementing sweeping, monolithic CX changes, focus on making small, incremental improvements that can be tested, validated, and iterated upon quickly.",
+      details: [
+        "Test and validate changes with real customers",
+        "Gather feedback and iterate based on the results",
+        "Maintain flexible CX roadmaps that adapt to customer input"
+      ],
+      icon: "🔄"
+    },
+    {
+      id: "cross-functional",
+      title: "Cross-Functional Collaboration",
+      agileConnection: "Business people and developers must work together daily throughout the project.",
+      description: "Break down silos between departments (e.g., marketing, sales, support, product) and foster a culture of collaboration where teams work together.",
+      details: [
+        "Establish clear communication channels between teams",
+        "Create processes for seamless information sharing",
+        "Ensure alignment across all customer touchpoints"
+      ],
+      icon: "🤝"
+    },
+    {
+      id: "feedback-loops",
+      title: "Rapid Feedback Loops",
+      agileConnection: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.",
+      description: "Establish mechanisms for gathering customer feedback at every stage of the customer journey and use it to make rapid adjustments.",
+      details: [
+        "Analyze feedback quickly to identify patterns",
+        "Make rapid adjustments to CX processes and services",
+        "Implement tools for real-time feedback analysis"
+      ],
+      icon: "📊"
+    },
+    {
+      id: "empowered-teams",
+      title: "Empowered and Self-Organizing Teams",
+      agileConnection: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
+      description: "Empower CX teams to make decisions and take ownership of their work with the resources and support they need.",
+      details: [
+        "Foster a culture of trust and autonomy",
+        "Provide necessary training and resources",
+        "Create a responsive and adaptable CX environment"
+      ],
+      icon: "💪"
+    },
+    {
+      id: "transparency",
+      title: "Transparency and Open Communication",
+      agileConnection: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
+      description: "Share customer insights and feedback openly with all stakeholders and communicate CX goals and progress clearly.",
+      details: [
+        "Make information easily accessible to all teams",
+        "Use visual aids and data dashboards",
+        "Ensure alignment toward common goals"
+      ],
+      icon: "🔍"
+    },
+    {
+      id: "data-driven",
+      title: "Data-Driven Decision Making",
+      agileConnection: "Working software is the primary measure of progress.",
+      description: "Use data and analytics to measure the impact of CX initiatives and identify areas for improvement.",
+      details: [
+        "Track key performance indicators (KPIs)",
+        "Prioritize CX investments based on data",
+        "Objectively evaluate effectiveness of CX efforts"
+      ],
+      icon: "📈"
+    }
+  ];
+
+  return (
+    <section id="methodology" className="py-24 bg-gray-50 dark:bg-gray-800">
+      <div className="section-container">
+        <div className="section-heading-container">
+          <span className="chip chip-secondary mb-3">Methodology</span>
+          <h2 className="section-title">Agile CX Principles: A Deep Dive</h2>
+          <p className="section-subtitle">
+            Applying agile methodologies to transform your customer experience strategy
+          </p>
+        </div>
+
+        <div className="mt-12">
+          <Tabs defaultValue="customer-centricity" className="w-full" onValueChange={setActiveTab}>
+            <div className="mb-8 overflow-x-auto">
+              <TabsList className="inline-flex min-w-full sm:w-auto p-1 bg-muted">
+                {principles.map((principle) => (
+                  <TabsTrigger 
+                    key={principle.id} 
+                    value={principle.id}
+                    className="text-sm py-3 px-4 whitespace-nowrap"
+                  >
+                    <span className="mr-2">{principle.icon}</span>
+                    {principle.title.split(" ")[0]}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
+            
+            {principles.map((principle) => (
+              <TabsContent 
+                key={principle.id} 
+                value={principle.id}
+                className="animate-fade-in mt-6"
+              >
+                <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-sm border border-gray-100 dark:border-gray-700">
+                  <div className="flex flex-col md:flex-row gap-8">
+                    <div className="md:w-2/3">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                        {principle.title}
+                      </h3>
+                      <div className="mb-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border-l-4 border-brand-blue">
+                        <p className="text-sm font-medium mb-1 text-brand-blue">Agile Principle Connection:</p>
+                        <p className="italic">"{principle.agileConnection}"</p>
+                        <p className="text-xs text-muted-foreground mt-1">- The Agile Manifesto</p>
+                      </div>
+                      <p className="text-lg mb-6">
+                        {principle.description}
+                      </p>
+                    </div>
+                    <div className="md:w-1/3">
+                      <div className="bg-brand-blue-light dark:bg-gray-800 p-6 rounded-lg">
+                        <h4 className="font-medium text-brand-blue-dark dark:text-brand-blue mb-4">CX Application:</h4>
+                        <ul className="space-y-3">
+                          {principle.details.map((detail, index) => (
+                            <li key={index} className="flex items-start">
+                              <span className="inline-block mr-2 mt-1 text-brand-blue">•</span>
+                              <span>{detail}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </TabsContent>
+            ))}
+          </Tabs>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Methodology;
