@@ -93,7 +93,7 @@ const Methodology = () => {
   ];
 
   return (
-    <section id="methodology" className="py-24 bg-gray-50 dark:bg-gray-800">
+    <section id="methodology" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
       <div className="section-container">
         <div className="section-heading-container">
           <span className="chip chip-secondary mb-3">Methodology</span>
@@ -103,18 +103,19 @@ const Methodology = () => {
           </p>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-8 md:mt-12">
           <Tabs defaultValue="customer-centricity" className="w-full" onValueChange={setActiveTab}>
-            <div className="mb-8">
+            <div className="mb-6 md:mb-8 overflow-hidden">
               <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent">
                 {principles.map((principle) => (
                   <TabsTrigger 
                     key={principle.id} 
                     value={principle.id}
-                    className="text-sm py-3 px-4 whitespace-nowrap bg-muted"
+                    className="text-xs md:text-sm py-2 md:py-3 px-3 md:px-4 whitespace-nowrap bg-muted"
                   >
                     <span className="mr-2">{principle.icon}</span>
-                    {principle.title.split(" ")[0]}
+                    <span className="hidden sm:inline">{principle.title.split(" ")[0]}</span>
+                    <span className="sm:hidden">{principle.icon}</span>
                   </TabsTrigger>
                 ))}
               </TabsList>
@@ -124,27 +125,27 @@ const Methodology = () => {
               <TabsContent 
                 key={principle.id} 
                 value={principle.id}
-                className="animate-fade-in mt-6"
+                className="animate-fade-in mt-4 md:mt-6"
               >
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-sm border border-gray-100 dark:border-gray-700">
-                  <div className="flex flex-col md:flex-row gap-8">
+                <div className="bg-white dark:bg-gray-900 rounded-xl p-4 md:p-8 shadow-sm border border-gray-100 dark:border-gray-700">
+                  <div className="flex flex-col md:flex-row gap-6 md:gap-8">
                     <div className="md:w-2/3">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">
                         {principle.title}
                       </h3>
-                      <div className="mb-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border-l-4 border-brand-blue">
-                        <p className="text-sm font-medium mb-1 text-brand-blue">Agile Principle Connection:</p>
-                        <p className="italic">"{principle.agileConnection}"</p>
+                      <div className="mb-4 md:mb-6 p-3 md:p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border-l-4 border-brand-blue">
+                        <p className="text-xs md:text-sm font-medium mb-1 text-brand-blue">Agile Principle Connection:</p>
+                        <p className="text-sm md:text-base italic">"{principle.agileConnection}"</p>
                         <p className="text-xs text-muted-foreground mt-1">- The Agile Manifesto</p>
                       </div>
-                      <p className="text-lg mb-6">
+                      <p className="text-sm md:text-lg mb-4 md:mb-6">
                         {principle.description}
                       </p>
                     </div>
                     <div className="md:w-1/3">
-                      <div className="bg-brand-blue-light dark:bg-gray-800 p-6 rounded-lg">
-                        <h4 className="font-medium text-brand-blue-dark dark:text-brand-blue mb-4">CX Application:</h4>
-                        <ul className="space-y-3">
+                      <div className="bg-brand-blue-light dark:bg-gray-800 p-4 md:p-6 rounded-lg">
+                        <h4 className="font-medium text-brand-blue-dark dark:text-brand-blue mb-3 md:mb-4 text-sm md:text-base">CX Application:</h4>
+                        <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
                           {principle.details.map((detail, index) => (
                             <li key={index} className="flex items-start">
                               <span className="inline-block mr-2 mt-1 text-brand-blue">•</span>
