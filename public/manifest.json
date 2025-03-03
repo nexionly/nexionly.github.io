@@ -1,0 +1,22 @@
+
+{
+  "name": "Tomas Williams | CX Consultancy & Advisory",
+  "short_name": "Tomas Williams",
+  "description": "Helping Series-A founders build exceptional customer experiences that drive growth and loyalty.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4ade80",
+  "icons": [
+    {
+      "src": "/lovable-uploads/6216375d-1589-46e7-acf9-84dd8a4a4705.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/lovable-uploads/6216375d-1589-46e7-acf9-84dd8a4a4705.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
