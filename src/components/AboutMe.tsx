@@ -33,7 +33,7 @@ const AboutMe = () => {
             <p className="text-lg text-muted-foreground">
               When I'm not advising founders, you might find me exploring new places around the globe, taking photos, swimming with fishes or enjoying a slow start to the day with a walk on the Vancouver seawall.
             </p>
-            <div className="pt-4">
+            <div className="pt-4 flex flex-wrap gap-4">
               <a 
                 href="https://cal.com/tomas-williams" 
                 target="_blank" 
@@ -41,6 +41,14 @@ const AboutMe = () => {
                 className="btn-primary"
               >
                 Let's Connect
+              </a>
+              <a 
+                href="https://tomaswilliamsa.substack.com/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-secondary flex items-center gap-1"
+              >
+                My Newsletter
               </a>
             </div>
           </div>
