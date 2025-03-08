@@ -1,5 +1,5 @@
 
-import { Phone } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const FloatingCallButton = () => {
@@ -36,12 +36,13 @@ const FloatingCallButton = () => {
       rel="noopener noreferrer"
       className={`fixed bottom-6 right-6 btn-primary shadow-lg rounded-full p-4 z-50 transition-all duration-300 
         ${isVisible && !isFooterVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}
-        hover:bg-brand-green-dark hover:scale-110 hover:shadow-xl`}
-      aria-label="Book a call with Tomas Williams"
+        hover:bg-brand-green-dark hover:scale-110 hover:shadow-xl group`}
+      aria-label="Book your CX strategy session with Tomas Williams"
     >
       <span className="flex items-center gap-2">
-        <Phone size={18} />
-        <span className="hidden sm:inline">Book a Call</span>
+        <Phone size={18} className="transition-transform duration-300 group-hover:rotate-12" />
+        <span className="hidden sm:inline">Get CX Strategy</span>
+        <ArrowRight size={14} className="hidden sm:inline transition-transform duration-300 group-hover:translate-x-1" />
       </span>
     </a>
   );

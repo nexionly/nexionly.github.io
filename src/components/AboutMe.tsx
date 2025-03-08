@@ -1,4 +1,6 @@
 
+import { ArrowRight, BookOpen } from "lucide-react";
+
 const AboutMe = () => {
   return (
     <section id="about-me" className="py-24 bg-gray-50 dark:bg-gray-900/50">
@@ -38,17 +40,19 @@ const AboutMe = () => {
                 href="https://cal.com/tomas-williams" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="btn-primary"
+                className="btn-primary group flex items-center gap-2 transition-all duration-300 hover:scale-105"
               >
-                Let's Connect
+                <span>Let's Connect</span>
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
               <a 
                 href="https://tomaswilliamsa.substack.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="btn-secondary flex items-center gap-1"
+                className="btn-secondary flex items-center gap-2 group transition-all duration-300 hover:scale-105"
               >
-                My Newsletter
+                <span>My Newsletter</span>
+                <BookOpen className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
               </a>
             </div>
           </div>

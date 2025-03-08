@@ -1,5 +1,4 @@
-
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const Hero = () => {
@@ -61,15 +60,18 @@ const Hero = () => {
               href="https://cal.com/tomas-williams" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn-primary transition-transform duration-300 hover:scale-105 z-10 relative"
+              className="btn-primary transition-all duration-300 hover:scale-105 z-10 relative group"
               role="button"
-              aria-label="Book a call with Tomas Williams"
+              aria-label="Book your CX strategy session with Tomas Williams"
             >
-              Book a Call
+              <span className="flex items-center justify-center">
+                Get Your CX Strategy Session
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </span>
             </a>
             <button 
               onClick={() => scrollToSection('services')}
-              className="btn-outline transition-transform duration-300 hover:scale-105 z-10 relative"
+              className="btn-outline transition-all duration-300 hover:scale-105 z-10 relative"
               aria-label="Learn more about our services"
             >
               Learn More

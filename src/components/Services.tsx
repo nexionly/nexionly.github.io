@@ -1,5 +1,5 @@
 
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -69,6 +69,18 @@ const Services = () => {
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="mt-12 text-center">
+          <a 
+            href="https://cal.com/tomas-williams" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-primary inline-flex items-center gap-2 group transition-all duration-300 hover:scale-105 hover:shadow-md"
+          >
+            <span>Discuss Your CX Needs</span>
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </a>
         </div>
       </div>
     </section>

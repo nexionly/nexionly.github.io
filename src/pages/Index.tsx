@@ -15,6 +15,8 @@ import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import BackToTop from "@/components/BackToTop";
+import WhyNow from "@/components/WhyNow";
+import BeforeAfter from "@/components/BeforeAfter";
 
 const Index = () => {
   const { toast } = useToast();
@@ -30,7 +32,9 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
+      <WhyNow />
       <Services />
+      <BeforeAfter />
       <Process />
       <Methodology />
       <AboutMe />
