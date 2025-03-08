@@ -1,5 +1,4 @@
-
-import { Clock, TrendingUp, AlertCircle } from "lucide-react";
+import { Clock, TrendingUp, AlertCircle, ArrowRight } from "lucide-react";
 
 const WhyNow = () => {
   const reasons = [
