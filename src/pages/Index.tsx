@@ -9,7 +9,6 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Methodology from "@/components/Methodology";
 import Testimonials from "@/components/Testimonials";
-import NewsletterSubscribe from "@/components/NewsletterSubscribe";
 import IdealClient from "@/components/IdealClient";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -40,7 +39,6 @@ const Index = () => {
       <AboutMe />
       <IdealClient />
       <Testimonials />
-      <NewsletterSubscribe />
       <Footer />
       <FloatingCallButton />
       <BackToTop />

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
@@ -50,7 +49,6 @@ const Navbar = () => {
     }
   };
 
-  // Group navigation items into logical categories
   const navStructure = [
     { 
       name: "About", 
@@ -76,11 +74,6 @@ const Navbar = () => {
         { name: "Ideal Client", href: "#ideal-client" },
         { name: "Testimonials", href: "#testimonials" }
       ]
-    },
-    { 
-      name: "Newsletter", 
-      href: "#newsletter",
-      type: "direct"
     }
   ];
 
@@ -99,7 +92,6 @@ const Navbar = () => {
           <span className="text-brand-pink">.</span>
         </a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           {navStructure.map((item, index) => (
             <div key={index} className="relative">
@@ -160,7 +152,6 @@ const Navbar = () => {
           </a>
         </nav>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center gap-4">
           <ThemeToggle />
           <button
@@ -172,7 +163,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 absolute top-full left-0 right-0 shadow-md py-4 px-6 animate-fade-in max-h-[80vh] overflow-y-auto">
           <nav className="flex flex-col space-y-1">

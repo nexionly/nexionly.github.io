@@ -31,28 +31,30 @@ const BeforeAfter = () => {
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8">
           {scenarios.map((scenario, index) => (
             <div 
               key={index} 
-              className="glass-card rounded-xl overflow-hidden animate-fade-up"
+              className="glass-card animate-fade-up"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="bg-brand-pink/10 dark:bg-brand-pink/5 p-6 border-b border-gray-100 dark:border-gray-800">
+              <div className="p-6 border-b border-gray-100 dark:border-gray-800 bg-brand-pink/5">
                 <h3 className="text-xl font-bold">{scenario.title}</h3>
               </div>
-              <div className="grid md:grid-cols-2 divide-x divide-gray-100 dark:divide-gray-800">
-                <div className="p-6 md:p-8">
+              
+              <div className="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="p-6 rounded-lg bg-red-50/50 dark:bg-red-900/10 border border-red-100 dark:border-red-900/20">
                   <div className="flex items-center mb-4">
                     <span className="text-sm font-semibold text-red-500 bg-red-50 dark:bg-red-900/20 px-3 py-1 rounded-full">BEFORE</span>
                   </div>
-                  <p className="text-muted-foreground">{scenario.before}</p>
+                  <p className="text-gray-700 dark:text-gray-300">{scenario.before}</p>
                 </div>
-                <div className="p-6 md:p-8 bg-brand-green-light/20 dark:bg-brand-green/5">
+                
+                <div className="p-6 rounded-lg bg-green-50/50 dark:bg-green-900/10 border border-green-100 dark:border-green-900/20">
                   <div className="flex items-center mb-4">
                     <span className="text-sm font-semibold text-green-500 bg-green-50 dark:bg-green-900/20 px-3 py-1 rounded-full">AFTER</span>
                   </div>
-                  <p className="text-muted-foreground">{scenario.after}</p>
+                  <p className="text-gray-700 dark:text-gray-300">{scenario.after}</p>
                 </div>
               </div>
             </div>
