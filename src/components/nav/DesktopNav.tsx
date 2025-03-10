@@ -35,12 +35,12 @@ const DesktopNav: React.FC<DesktopNavProps> = ({
       ))}
       <ThemeToggle />
       <a
-        href="https://cal.com/tomas-williams"
+        href="https://cal.com/tomas-williams/30min"
         target="_blank"
         rel="noopener noreferrer"
         className="btn-primary text-sm hover:scale-105 transition-transform duration-300 group"
       >
-        Get Your CX Strategy Session
+        Book 30-Min Call
       </a>
     </nav>
   );

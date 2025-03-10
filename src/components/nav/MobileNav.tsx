@@ -53,13 +53,13 @@ const MobileNav: React.FC<MobileNavProps> = ({
               </div>
             ))}
             <a
-              href="https://cal.com/tomas-williams"
+              href="https://cal.com/tomas-williams/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm block text-center mt-4 hover:scale-105 transition-transform duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
-              Get Your CX Strategy Session
+              Book 30-Min Call
             </a>
           </nav>
         </div>

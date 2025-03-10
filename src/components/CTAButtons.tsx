@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -11,7 +11,7 @@ interface CTAButtonsProps {
 }
 
 const CTAButtons: React.FC<CTAButtonsProps> = ({
-  primaryText = "Book a 30-Min Consultation",
+  primaryText = "Book a 30-Min Call",
   secondaryText = "Get CX Essentials Checklist",
   className = "",
   arrangement = "horizontal"

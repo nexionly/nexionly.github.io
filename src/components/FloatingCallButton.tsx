@@ -1,11 +1,13 @@
 
 import { Phone, CheckCircle } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 const FloatingCallButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isFooterVisible, setIsFooterVisible] = useState(false);
   const [showSecondary, setShowSecondary] = useState(false);
+  const { toast } = useToast();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,15 +35,29 @@ const FloatingCallButton = () => {
   // Function to trigger the ConvertKit popup
   const triggerChecklist = (e: React.MouseEvent) => {
     e.preventDefault();
-    // This is how we trigger the ConvertKit popup
-    if (window.convertkit && typeof window.convertkit.openModal === 'function') {
-      window.convertkit.openModal("3666d9f307");
-    } else {
-      console.error("ConvertKit script not loaded properly");
+    
+    try {
+      // Check if the window object exists (for SSR compatibility)
+      if (typeof window !== 'undefined') {
+        // Direct DOM approach to trigger ConvertKit form
+        const formToggle = document.createElement('a');
+        formToggle.setAttribute('data-formkit-toggle', '3666d9f307');
+        formToggle.href = 'https://mattegreenmedia.kit.com/3666d9f307';
+        document.body.appendChild(formToggle);
+        formToggle.click();
+        document.body.removeChild(formToggle);
+      }
+    } catch (error) {
+      console.error("Error triggering form:", error);
+      toast({
+        title: "Unable to open form",
+        description: "Please try again in a moment",
+        variant: "destructive",
+      });
     }
   };
 
-  // Toggle between primary and secondary CTA
+  // Toggle button for showing the secondary CTA
   const toggleCTA = () => {
     setShowSecondary(!showSecondary);
   };
@@ -54,12 +70,11 @@ const FloatingCallButton = () => {
       <button
         onClick={triggerChecklist}
         className={`btn-secondary shadow-lg rounded-full p-4 transition-all duration-300
-          ${showSecondary ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} 
-          hover:scale-110 hover:shadow-xl group`}
+          ${showSecondary ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}
         aria-label="Get CX Essentials Checklist"
       >
         <span className="flex items-center gap-2">
-          <CheckCircle size={18} className="transition-transform duration-300 group-hover:rotate-12" />
+          <CheckCircle size={18} />
           <span className="hidden sm:inline">Get Checklist</span>
         </span>
       </button>
@@ -73,8 +88,7 @@ const FloatingCallButton = () => {
           className="btn-primary shadow-lg rounded-full p-4 transition-all duration-300
             hover:bg-brand-green-dark hover:scale-110 hover:shadow-xl group"
           aria-label="Book your CX strategy session with Tomas Williams"
-          onMouseEnter={() => setShowSecondary(true)}
-          onMouseLeave={() => setShowSecondary(false)}
+          onClick={toggleCTA}
         >
           <span className="flex items-center gap-2">
             <Phone size={18} className="transition-transform duration-300 group-hover:rotate-12" />

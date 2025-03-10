@@ -11,7 +11,6 @@ import Methodology from "@/components/Methodology";
 import Testimonials from "@/components/Testimonials";
 import IdealClient from "@/components/IdealClient";
 import Footer from "@/components/Footer";
-import ProgressBar from "@/components/ProgressBar";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import BackToTop from "@/components/BackToTop";
 import WhyNow from "@/components/WhyNow";
@@ -27,7 +26,6 @@ const Index = () => {
 
   return (
     <main className={`min-h-screen overflow-x-hidden ${isLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500 dark:bg-gray-900 dark:text-white`}>
-      <ProgressBar />
       <Navbar />
       <Hero />
       <About />
