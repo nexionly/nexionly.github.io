@@ -1,4 +1,6 @@
-import { Clock, TrendingUp, AlertCircle, ArrowRight } from "lucide-react";
+
+import { Clock, TrendingUp, AlertCircle } from "lucide-react";
+import CTAButtons from "./CTAButtons";
 
 const WhyNow = () => {
   const reasons = [
@@ -45,15 +47,7 @@ const WhyNow = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <a 
-            href="https://cal.com/tomas-williams" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn-primary inline-flex items-center gap-2 group transition-all duration-300 hover:scale-105"
-          >
-            <span>Don't Miss Your Window</span>
-            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
+          <CTAButtons className="justify-center" />
         </div>
       </div>
     </section>

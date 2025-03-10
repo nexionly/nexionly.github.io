@@ -1,5 +1,7 @@
-import { ArrowDown, ArrowRight } from "lucide-react";
+
+import { ArrowDown } from "lucide-react";
 import { useEffect, useRef } from "react";
+import CTAButtons from "./CTAButtons";
 
 const Hero = () => {
   // Reference to store the navbar height
@@ -55,28 +57,7 @@ const Hero = () => {
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             I help post Series-A founders lay the foundation for CX teams that deliver sustainable growth and long-term success.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="https://cal.com/tomas-williams" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn-primary transition-all duration-300 hover:scale-105 z-10 relative group"
-              role="button"
-              aria-label="Book your CX strategy session with Tomas Williams"
-            >
-              <span className="flex items-center justify-center">
-                Get Your CX Strategy Session
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </span>
-            </a>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="btn-outline transition-all duration-300 hover:scale-105 z-10 relative"
-              aria-label="Learn more about our services"
-            >
-              Learn More
-            </button>
-          </div>
+          <CTAButtons className="justify-center" />
         </div>
       </div>
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">

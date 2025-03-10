@@ -1,5 +1,6 @@
 
-import { ArrowRight, BookOpen } from "lucide-react";
+import { BookOpen } from "lucide-react";
+import CTAButtons from "./CTAButtons";
 
 const AboutMe = () => {
   return (
@@ -36,15 +37,7 @@ const AboutMe = () => {
               When I'm not advising founders, you might find me exploring new places around the globe, taking photos, swimming with fishes or enjoying a slow start to the day with a walk on the Vancouver seawall.
             </p>
             <div className="pt-4 flex flex-wrap gap-4">
-              <a 
-                href="https://cal.com/tomas-williams" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn-primary group flex items-center gap-2 transition-all duration-300 hover:scale-105"
-              >
-                <span>Let's Connect</span>
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
+              <CTAButtons />
               <a 
                 href="https://tomaswilliamsa.substack.com/" 
                 target="_blank" 
