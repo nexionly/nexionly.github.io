@@ -1,6 +1,7 @@
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 
 interface CTAButtonsProps {
   primaryText?: string;
@@ -15,14 +16,32 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
   className = "",
   arrangement = "horizontal"
 }) => {
-  // Function to trigger the ConvertKit popup
+  const { toast } = useToast();
+  const [isScriptLoaded, setIsScriptLoaded] = useState(false);
+
+  useEffect(() => {
+    // Check if ConvertKit script is loaded
+    const checkScript = setInterval(() => {
+      if (window.convertkit) {
+        setIsScriptLoaded(true);
+        clearInterval(checkScript);
+      }
+    }, 1000);
+
+    // Cleanup
+    return () => clearInterval(checkScript);
+  }, []);
+
   const triggerChecklist = (e: React.MouseEvent) => {
     e.preventDefault();
-    // This is how we trigger the ConvertKit popup
-    if (window.convertkit && typeof window.convertkit.openModal === 'function') {
+    if (isScriptLoaded && window.convertkit) {
       window.convertkit.openModal("3666d9f307");
     } else {
-      console.error("ConvertKit script not loaded properly");
+      toast({
+        title: "Unable to open form",
+        description: "Please try again in a moment",
+        variant: "destructive",
+      });
     }
   };
 
