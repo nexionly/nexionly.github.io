@@ -1,5 +1,4 @@
 
-import { BookOpen } from "lucide-react";
 import CTAButtons from "./CTAButtons";
 
 const AboutMe = () => {
@@ -36,17 +35,8 @@ const AboutMe = () => {
             <p className="text-lg text-muted-foreground">
               When I'm not advising founders, you might find me exploring new places around the globe, taking photos, swimming with fishes or enjoying a slow start to the day with a walk on the Vancouver seawall.
             </p>
-            <div className="pt-4 flex flex-wrap gap-4">
+            <div className="pt-4">
               <CTAButtons />
-              <a 
-                href="https://tomaswilliamsa.substack.com/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn-secondary flex items-center gap-2 group transition-all duration-300 hover:scale-105"
-              >
-                <span>My Newsletter</span>
-                <BookOpen className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
-              </a>
             </div>
           </div>
         </div>

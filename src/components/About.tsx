@@ -51,10 +51,6 @@ const About = () => {
                 </p>
               </div>
             </div>
-            
-            <a href="#contact" className="btn-primary">
-              Let's Work Together
-            </a>
           </div>
         </div>
       </div>
