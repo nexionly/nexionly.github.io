@@ -17,26 +17,23 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
   arrangement = "horizontal"
 }) => {
   const { toast } = useToast();
-  const [isScriptLoaded, setIsScriptLoaded] = useState(false);
-
-  useEffect(() => {
-    // Check if ConvertKit script is loaded
-    const checkScript = setInterval(() => {
-      if (window.convertkit) {
-        setIsScriptLoaded(true);
-        clearInterval(checkScript);
-      }
-    }, 1000);
-
-    // Cleanup
-    return () => clearInterval(checkScript);
-  }, []);
 
   const triggerChecklist = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (isScriptLoaded && window.convertkit) {
-      window.convertkit.openModal("3666d9f307");
-    } else {
+    
+    try {
+      // Check if the window object exists (for SSR compatibility)
+      if (typeof window !== 'undefined') {
+        // Direct DOM approach to trigger ConvertKit form
+        const formToggle = document.createElement('a');
+        formToggle.setAttribute('data-formkit-toggle', '3666d9f307');
+        formToggle.href = 'https://mattegreenmedia.kit.com/3666d9f307';
+        document.body.appendChild(formToggle);
+        formToggle.click();
+        document.body.removeChild(formToggle);
+      }
+    } catch (error) {
+      console.error("Error triggering form:", error);
       toast({
         title: "Unable to open form",
         description: "Please try again in a moment",
