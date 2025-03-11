@@ -15,9 +15,9 @@ const AboutMe = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in-left">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-lg mx-auto" style={{ width: '75%' }}>
               <img
-                src="/lovable-uploads/8e624975-e3bc-47af-a999-9f9f79ab165f.png"
+                src="/lovable-uploads/1d02e6cb-1334-485e-a513-a7523d419d30.png"
                 alt="Tomas Williams"
                 className="object-cover w-full h-full"
               />
