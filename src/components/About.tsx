@@ -26,7 +26,7 @@ const About = () => {
               Transforming Customer Experience for Scale-Up Success
             </h2>
             <p className="mb-6 text-muted-foreground">
-              With over a decade of experience in building and scaling CX teams, I specialize in helping post Series-A founders transition from founder-led support to strategic, customer-focused operations.
+              With over a decade of experience in building and scaling CX teams, I specialize in helping early-stage founders transition from founder-led support to strategic, customer-focused operations.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -40,7 +40,7 @@ const About = () => {
               <div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg border border-gray-100 dark:border-gray-700">
                 <h3 className="font-medium text-lg mb-2">B2B SaaS Expertise</h3>
                 <p className="text-muted-foreground">
-                  Specialized experience with B2B SaaS companies, particularly in the post-Series A growth phase.
+                  Specialized experience with B2B SaaS companies, particularly in the early growth phase.
                 </p>
               </div>
               

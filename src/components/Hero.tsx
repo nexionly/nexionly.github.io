@@ -52,10 +52,10 @@ const Hero = () => {
             <span className="chip chip-primary mb-3">CX Consultancy & Advisory</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Building Exceptional <span className="text-brand-pink">Customer Experiences</span> for Series-A Founders
+            Building Exceptional <span className="text-brand-pink">Customer Experiences</span> for Early-Stage Founders
           </h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            I help post Series-A founders lay the foundation for CX teams that deliver sustainable growth and long-term success.
+            I help early-stage founders lay the foundation for CX teams that deliver sustainable growth and long-term success.
           </p>
           <CTAButtons className="justify-center" />
         </div>

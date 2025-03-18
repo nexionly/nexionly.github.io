@@ -4,8 +4,8 @@ import CTAButtons from "./CTAButtons";
 
 const IdealClient = () => {
   const clientCriteria = [
-    "Founders and co-founders of B2B SaaS organizations, post-seed, pre-Series B funding.",
-    "Have recently closed Series-A funding within the last [6-12] months, OR are actively preparing for Series-A funding in the next [3-6] months.",
+    "Founders and co-founders of B2B SaaS organizations at the early stages of growth.",
+    "Have secured initial funding or are bootstrapping with a focus on scaling their operations and customer base.",
     "Have relied on ad-hoc customer support or founder-led customer success, and recognize they are outgrowing their current reactive model and need to build a proactive CX function to scale.",
     "Lack internal expertise in building and leading CX teams and need external guidance and support."
   ];

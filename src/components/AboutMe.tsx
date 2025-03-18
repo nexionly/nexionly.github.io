@@ -30,7 +30,7 @@ const AboutMe = () => {
               I'm a CX leader with over a decade of experience in building and scaling customer-focused teams. My journey in the world of customer experience has taken me through various industries and challenges.
             </p>
             <p className="text-lg text-muted-foreground">
-              I'm passionate about helping Series-A founders establish customer experience as a strategic function within their organizations. My approach combines empathy, data-driven insights, and practical strategies that drive growth.
+              I'm passionate about helping early-stage founders establish customer experience as a strategic function within their organizations. My approach combines empathy, data-driven insights, and practical strategies that drive growth.
             </p>
             <p className="text-lg text-muted-foreground">
               When I'm not advising founders, you might find me exploring new places around the globe, taking photos, swimming with fishes or enjoying a slow start to the day with a walk on the Vancouver seawall.

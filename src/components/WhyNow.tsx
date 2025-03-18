@@ -6,18 +6,18 @@ const WhyNow = () => {
   const reasons = [
     {
       icon: <Clock className="h-10 w-10 text-brand-pink" />,
-      title: "The Series-A Critical Window",
-      description: "Post-funding is the optimal time to establish CX systems that scale. Waiting too long creates technical debt and customer friction that becomes harder to resolve."
+      title: "The Early-Stage Critical Window",
+      description: "The early growth phase is the optimal time to establish CX systems that scale. Waiting too long creates technical debt and customer friction that becomes harder to resolve."
     },
     {
       icon: <TrendingUp className="h-10 w-10 text-brand-green" />,
       title: "Scalability is a Make-or-Break Factor",
-      description: "Series-A companies are expected to demonstrate rapid growth. CX issues that were manageable with a small customer base can quickly become overwhelming as you scale."
+      description: "Early-stage companies are expected to demonstrate rapid growth. CX issues that were manageable with a small customer base can quickly become overwhelming as you scale."
     },
     {
       icon: <AlertCircle className="h-10 w-10 text-brand-blue" />,
       title: "Investor Confidence Relies on CX Metrics",
-      description: "Series-B investors scrutinize retention, NPS, and customer health metrics. Building these systems now directly impacts your next fundraising round."
+      description: "Future investors scrutinize retention, NPS, and customer health metrics. Building these systems now directly impacts your future fundraising potential."
     }
   ];
 
@@ -26,9 +26,9 @@ const WhyNow = () => {
       <div className="section-container">
         <div className="text-center mb-16">
           <span className="chip chip-primary mb-3">Why Now?</span>
-          <h2 className="section-title">The Critical Timing for Series-A CX Strategy</h2>
+          <h2 className="section-title">The Critical Timing for Early-Stage CX Strategy</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
-            Series-A is the perfect moment to invest in customer experience—not too early and certainly not too late.
+            The early growth phase is the perfect moment to invest in customer experience—not too early and certainly not too late.
           </p>
         </div>
 

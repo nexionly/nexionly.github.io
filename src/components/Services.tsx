@@ -46,7 +46,7 @@ const Services = () => {
           <span className="chip chip-accent mb-3">Services</span>
           <h2 className="section-title">How I Can Help Your Business</h2>
           <p className="section-subtitle">
-            Specialized consulting services designed to help Series-A companies scale their customer experience operations.
+            Specialized consulting services designed to help early-stage companies scale their customer experience operations.
           </p>
         </div>
 
