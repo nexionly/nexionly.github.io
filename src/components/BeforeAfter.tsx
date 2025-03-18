@@ -4,19 +4,19 @@ import CTAButtons from "./CTAButtons";
 const BeforeAfter = () => {
   const scenarios = [
     {
-      title: "Customer Support",
-      before: "Founder-led, reactive firefighting with inconsistent responses and no tracking",
-      after: "Proactive team with clear processes, templates, and metrics driving continuous improvement"
+      title: "Customer Support & Retention",
+      before: "Increasing churn rates, inconsistent responses, no tracking, and overwhelmed team members scrambling to put out fires",
+      after: "Stable retention metrics, proactive support processes, clear escalation paths, and continuous improvement driven by data"
     },
     {
-      title: "Onboarding Experience",
-      before: "High-touch, manual process that doesn't scale and varies based on who's available",
-      after: "Structured, repeatable system that delights customers while requiring less time per account"
+      title: "Growth & Scaling",
+      before: "Declining ARR growth, missed upsell opportunities, and processes that break down with each new customer cohort",
+      after: "Predictable expansion revenue, scalable systems that grow with you, and successful upsell/cross-sell playbooks"
     },
     {
-      title: "Customer Feedback",
-      before: "Ad-hoc collection with no systematic way to prioritize and address issues",
-      after: "Integrated voice-of-customer program that informs product roadmap and prevents churn"
+      title: "Product & Engineering",
+      before: "Mounting product bugs, developers constantly pulled into support issues, and no clear prioritization of customer-impacting problems",
+      after: "Balanced roadmap that addresses both growth and stability, clear bug tracking and prioritization, and reduced support burden on technical teams"
     }
   ];
 
@@ -25,9 +25,9 @@ const BeforeAfter = () => {
       <div className="section-container">
         <div className="text-center mb-16">
           <span className="chip chip-secondary mb-3">The Transformation</span>
-          <h2 className="section-title">Before & After: Your CX Evolution</h2>
+          <h2 className="section-title">From Pains to Gains: Your CX Evolution</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
-            See the concrete differences a strategic CX approach makes in your day-to-day operations.
+            See the concrete differences a strategic CX approach makes to the challenges you're currently facing.
           </p>
         </div>
 

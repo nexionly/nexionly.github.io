@@ -1,23 +1,23 @@
 
-import { Clock, TrendingUp, AlertCircle } from "lucide-react";
+import { TrendingDown, AlertCircle, DollarSign } from "lucide-react";
 import CTAButtons from "./CTAButtons";
 
 const WhyNow = () => {
   const reasons = [
     {
-      icon: <Clock className="h-10 w-10 text-brand-pink" />,
-      title: "The Early-Stage Critical Window",
-      description: "The early growth phase is the optimal time to establish CX systems that scale. Waiting too long creates technical debt and customer friction that becomes harder to resolve."
-    },
-    {
-      icon: <TrendingUp className="h-10 w-10 text-brand-green" />,
-      title: "Scalability is a Make-or-Break Factor",
-      description: "Early-stage companies are expected to demonstrate rapid growth. CX issues that were manageable with a small customer base can quickly become overwhelming as you scale."
+      icon: <TrendingDown className="h-10 w-10 text-brand-pink" />,
+      title: "The Churn Crisis",
+      description: "Early-stage companies often face sudden spikes in churn when their ad-hoc support systems break under the weight of scaling. Each lost customer represents vital revenue and future growth potential."
     },
     {
       icon: <AlertCircle className="h-10 w-10 text-brand-blue" />,
-      title: "Investor Confidence Relies on CX Metrics",
-      description: "Future investors scrutinize retention, NPS, and customer health metrics. Building these systems now directly impacts your future fundraising potential."
+      title: "The Scale-Up Squeeze",
+      description: "As your customer base grows, bugs and support tickets pile up faster than your team can handle them. This drains developer resources and creates a cycle of reactive firefighting instead of proactive growth."
+    },
+    {
+      icon: <DollarSign className="h-10 w-10 text-brand-green" />,
+      title: "The Revenue Risk",
+      description: "Without proper CX systems, renewals become uncertain and upsell opportunities are missed. Investors scrutinize these metrics closely, and poor performance can impact your next funding round."
     }
   ];
 
@@ -26,9 +26,9 @@ const WhyNow = () => {
       <div className="section-container">
         <div className="text-center mb-16">
           <span className="chip chip-primary mb-3">Why Now?</span>
-          <h2 className="section-title">The Critical Timing for Early-Stage CX Strategy</h2>
+          <h2 className="section-title">The Urgent Need for Early-Stage CX Strategy</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
-            The early growth phase is the perfect moment to invest in customer experience—not too early and certainly not too late.
+            Customer experience issues compound rapidly as you scale—waiting too long creates problems that are far more expensive and difficult to fix.
           </p>
         </div>
 

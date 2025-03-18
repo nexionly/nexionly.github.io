@@ -7,27 +7,27 @@ const Process = () => {
   const steps = [
     {
       number: "01",
-      title: "Discovery & Assessment",
-      description: "We begin with a comprehensive analysis of your current CX operations, team structure, and customer journey. This helps identify key challenges and opportunities.",
-      details: "This phase typically involves stakeholder interviews, data analysis, and reviews of existing processes and customer feedback."
+      title: "Pain Point Identification",
+      description: "We begin by diagnosing the specific CX issues impacting your growth, from rising churn to missed upsell opportunities and support backlogs.",
+      details: "This phase includes reviewing your customer data, examining support tickets, analyzing churn reasons, conducting stakeholder interviews, and mapping the current customer journey to identify friction points."
     },
     {
       number: "02",
-      title: "Strategic Planning",
-      description: "Based on the assessment, we develop a tailored CX strategy and roadmap that aligns with your business goals and addresses identified gaps.",
-      details: "This includes recommendations for team structure, processes, tools, and metrics to track success, all presented in a comprehensive action plan."
+      title: "Solution Architecture",
+      description: "Based on the assessment, we develop a tailored CX strategy that addresses your specific pain points and aligns with your growth goals and resources.",
+      details: "This includes designing scalable support workflows, creating renewal playbooks, establishing upsell frameworks, and outlining the team structure and tools needed to execute effectively."
     },
     {
       number: "03",
-      title: "Implementation Support",
-      description: "I work closely with your team to implement the recommended changes, providing guidance and hands-on support throughout the transition.",
-      details: "This can include assisting with hiring, training team members, establishing workflows, and implementing new tools and processes."
+      title: "Implementation & Transition",
+      description: "I work alongside your team to implement solutions that immediately address your most pressing CX issues while building for long-term scalability.",
+      details: "This can include setting up ticket management systems, creating response templates, establishing escalation paths, implementing customer health scores, and training team members on new processes."
     },
     {
       number: "04",
-      title: "Evaluation & Refinement",
-      description: "We continuously monitor and evaluate the performance of your CX operations, making adjustments as needed to ensure optimal results.",
-      details: "Regular check-ins and data analysis help track progress and identify areas for further improvement to ensure your CX function drives sustainable growth."
+      title: "Measurement & Refinement",
+      description: "We establish clear metrics to track improvements in retention, support efficiency, and revenue expansion, making adjustments to optimize results.",
+      details: "Regular reviews track progress against baseline metrics, identify new challenges that emerge during growth, and continuously refine your CX approach to maintain high performance as you scale."
     }
   ];
 
@@ -36,9 +36,9 @@ const Process = () => {
       <div className="section-container">
         <div className="section-heading-container">
           <span className="chip chip-primary mb-3">Process</span>
-          <h2 className="section-title">How We'll Work Together</h2>
+          <h2 className="section-title">From Pain to Performance</h2>
           <p className="section-subtitle">
-            A structured approach to transforming your customer experience operations
+            A structured approach to solving your customer experience challenges and driving growth
           </p>
         </div>
 
