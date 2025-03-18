@@ -55,16 +55,16 @@ const Hero = () => {
             Is Customer Experience <span className="text-brand-pink">Holding Back Your Growth?</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            I help early-stage founders overcome growing pains of increased churn, stacking bugs, challenging renewals, and missed upsell opportunities.
+            I help early-stage founders overcome growing pains of <strong>increased churn</strong>, stacking <strong>bugs</strong>, challenging <strong>renewals</strong>, and missed upsell <strong>opportunities</strong>.
           </p>
           <CTAButtons className="justify-center" />
         </div>
       </div>
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
         <button 
-          onClick={() => scrollToSection('about')}
+          onClick={() => scrollToSection('why-now')}
           className="text-muted-foreground hover:text-brand-pink transition-colors z-10 relative"
-          aria-label="Scroll down to about section"
+          aria-label="Scroll down to why now section"
         >
           <ArrowDown size={24} />
         </button>
