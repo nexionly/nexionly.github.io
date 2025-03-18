@@ -1,29 +1,110 @@
 
+import { useState } from "react";
 import CTAButtons from "./CTAButtons";
+import { Card } from "@/components/ui/card";
+import { TrendingDown, TrendingUp, AlertCircle, CheckCircle, Clock } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const BeforeAfter = () => {
+  const [activeTab, setActiveTab] = useState("support");
+  
   const scenarios = [
     {
+      id: "support",
       title: "Customer Support & Retention",
-      before: "Increasing churn rates, inconsistent responses, no tracking, and overwhelmed team members scrambling to put out fires",
-      after: "Stable retention metrics, proactive support processes, clear escalation paths, and continuous improvement driven by data"
+      icon: <TrendingUp className="h-6 w-6 text-brand-green" />,
+      before: {
+        title: "Reactive and Overwhelmed",
+        description: "Support is seen as a cost center draining resources",
+        points: [
+          "Increasing customer churn with no clear retention strategy",
+          "Inconsistent responses causing customer frustration",
+          "No tracking system for recurring issues or feedback",
+          "Team constantly putting out fires with no time for prevention",
+          "Customer issues reaching executives and causing distractions"
+        ],
+        timeImpact: "Constant daily interruptions"
+      },
+      after: {
+        title: "Proactive and Strategic",
+        description: "Support becomes a growth driver and competitive advantage",
+        points: [
+          "Stable retention metrics with clear early warning systems",
+          "Standardized response frameworks for consistency",
+          "Data-driven improvement based on issue tracking",
+          "Proactive outreach preventing problems before they occur",
+          "Clear escalation paths protecting executive focus"
+        ],
+        timeImpact: "85% fewer critical escalations"
+      }
     },
     {
+      id: "growth",
       title: "Growth & Scaling",
-      before: "Declining ARR growth, missed upsell opportunities, and processes that break down with each new customer cohort",
-      after: "Predictable expansion revenue, scalable systems that grow with you, and successful upsell/cross-sell playbooks"
+      icon: <TrendingUp className="h-6 w-6 text-brand-blue" />,
+      before: {
+        title: "Stalled and Inefficient",
+        description: "Growth hampered by poor processes and missed opportunities",
+        points: [
+          "Declining ARR growth with no clear path to improvement",
+          "Missed upsell and cross-sell opportunities",
+          "Systems breaking down with each new customer cohort",
+          "Inconsistent onboarding creating future support burden",
+          "No clear visibility into customer health or expansion potential"
+        ],
+        timeImpact: "Extended sales cycles and slow growth"
+      },
+      after: {
+        title: "Systematic and Predictable",
+        description: "Scalable processes driving consistent expansion",
+        points: [
+          "Predictable expansion revenue with clear growth drivers",
+          "Successful upsell/cross-sell playbooks driving revenue",
+          "Scalable systems that grow with your customer base",
+          "Streamlined onboarding creating advocates from day one",
+          "Customer health scoring identifying expansion opportunities"
+        ],
+        timeImpact: "Revenue growth acceleration within 90 days"
+      }
     },
     {
+      id: "product",
       title: "Product & Engineering",
-      before: "Mounting product bugs, developers constantly pulled into support issues, and no clear prioritization of customer-impacting problems",
-      after: "Balanced roadmap that addresses both growth and stability, clear bug tracking and prioritization, and reduced support burden on technical teams"
+      icon: <TrendingUp className="h-6 w-6 text-brand-pink" />,
+      before: {
+        title: "Reactive and Diverted",
+        description: "Technical teams distracted by support instead of building",
+        points: [
+          "Mounting product bugs with no prioritization system",
+          "Developers constantly pulled into customer support issues",
+          "Feature development delayed by urgent fixes",
+          "No structured feedback loop from customers to product",
+          "Customer complaints driving roadmap rather than strategy"
+        ],
+        timeImpact: "Development velocity declining quarter over quarter"
+      },
+      after: {
+        title: "Balanced and Focused",
+        description: "Engineering team focused on strategic priorities",
+        points: [
+          "Balanced roadmap addressing both growth and stability",
+          "Clear bug tracking and prioritization process",
+          "Reduced support burden on technical teams",
+          "Structured customer feedback informing product decisions",
+          "Data-driven roadmap balancing innovation and improvements"
+        ],
+        timeImpact: "30-40% increase in development velocity"
+      }
     }
   ];
+
+  const activeScenario = scenarios.find(s => s.id === activeTab) || scenarios[0];
 
   return (
     <section id="transformation" className="py-24 bg-white dark:bg-gray-900">
       <div className="section-container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <span className="chip chip-secondary mb-3">The Transformation</span>
           <h2 className="section-title">From Pains to Gains: Your CX Evolution</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
@@ -31,34 +112,105 @@ const BeforeAfter = () => {
           </p>
         </div>
 
-        <div className="space-y-8">
-          {scenarios.map((scenario, index) => (
-            <div 
-              key={index} 
-              className="glass-card animate-fade-up"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              <div className="p-6 border-b border-gray-100 dark:border-gray-800 bg-brand-pink/5">
-                <h3 className="text-xl font-bold">{scenario.title}</h3>
+        {/* Scenario tabs */}
+        <div className="flex justify-center mb-8 overflow-x-auto pb-2 no-scrollbar">
+          <div className="flex border border-gray-200 dark:border-gray-700 rounded-lg">
+            {scenarios.map((scenario) => (
+              <button
+                key={scenario.id}
+                className={`px-4 py-2 text-sm font-medium whitespace-nowrap flex items-center gap-2 transition-colors ${
+                  activeTab === scenario.id
+                    ? "bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white"
+                    : "text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50"
+                }`}
+                onClick={() => setActiveTab(scenario.id)}
+              >
+                {scenario.icon}
+                {scenario.title}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Before/After cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto animate-fade-in">
+          {/* "Before" card */}
+          <Card className="overflow-hidden border-0 shadow-md bg-gradient-to-b from-red-50/80 to-white dark:from-red-900/10 dark:to-gray-800/50 border border-red-100/50 dark:border-red-900/20">
+            <div className="p-6 flex items-center gap-3 border-b border-red-100 dark:border-red-900/20">
+              <div className="p-2 rounded-full bg-red-100 dark:bg-red-900/20">
+                <AlertCircle className="h-5 w-5 text-red-500" />
               </div>
-              
-              <div className="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="p-6 rounded-lg bg-red-50/50 dark:bg-red-900/10 border border-red-100 dark:border-red-900/20">
-                  <div className="flex items-center mb-4">
-                    <span className="text-sm font-semibold text-red-500 bg-red-50 dark:bg-red-900/20 px-3 py-1 rounded-full">BEFORE</span>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300">{scenario.before}</p>
-                </div>
-                
-                <div className="p-6 rounded-lg bg-green-50/50 dark:bg-green-900/10 border border-green-100 dark:border-green-900/20">
-                  <div className="flex items-center mb-4">
-                    <span className="text-sm font-semibold text-green-500 bg-green-50 dark:bg-green-900/20 px-3 py-1 rounded-full">AFTER</span>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300">{scenario.after}</p>
-                </div>
+              <div>
+                <h3 className="text-lg font-bold text-red-600 dark:text-red-400">BEFORE</h3>
+                <p className="text-sm font-medium text-red-700/70 dark:text-red-400/70">{activeScenario.before.title}</p>
               </div>
             </div>
-          ))}
+            
+            <div className="p-6">
+              <p className="text-gray-600 dark:text-gray-300 font-medium mb-4">{activeScenario.before.description}</p>
+              
+              <ul className="space-y-3 mb-6">
+                {activeScenario.before.points.map((point, index) => (
+                  <li key={index} className="flex items-start">
+                    <TrendingDown className="h-5 w-5 text-red-500 mr-3 flex-shrink-0 mt-0.5" />
+                    <p className="text-gray-700 dark:text-gray-300">{point}</p>
+                  </li>
+                ))}
+              </ul>
+              
+              <div className="flex items-center gap-2 mt-4 p-3 bg-red-50 dark:bg-red-900/10 rounded-md border border-red-100 dark:border-red-900/20">
+                <Clock className="h-5 w-5 text-red-500" />
+                <p className="text-sm font-medium text-red-700 dark:text-red-400">{activeScenario.before.timeImpact}</p>
+              </div>
+            </div>
+          </Card>
+          
+          {/* "After" card */}
+          <Card className="overflow-hidden border-0 shadow-md bg-gradient-to-b from-green-50/80 to-white dark:from-green-900/10 dark:to-gray-800/50 border border-green-100/50 dark:border-green-900/20">
+            <div className="p-6 flex items-center gap-3 border-b border-green-100 dark:border-green-900/20">
+              <div className="p-2 rounded-full bg-green-100 dark:bg-green-900/20">
+                <CheckCircle className="h-5 w-5 text-green-500" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-green-600 dark:text-green-400">AFTER</h3>
+                <p className="text-sm font-medium text-green-700/70 dark:text-green-400/70">{activeScenario.after.title}</p>
+              </div>
+            </div>
+            
+            <div className="p-6">
+              <p className="text-gray-600 dark:text-gray-300 font-medium mb-4">{activeScenario.after.description}</p>
+              
+              <ul className="space-y-3 mb-6">
+                {activeScenario.after.points.map((point, index) => (
+                  <li key={index} className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                    <p className="text-gray-700 dark:text-gray-300">{point}</p>
+                  </li>
+                ))}
+              </ul>
+              
+              <div className="flex items-center gap-2 mt-4 p-3 bg-green-50 dark:bg-green-900/10 rounded-md border border-green-100 dark:border-green-900/20">
+                <Clock className="h-5 w-5 text-green-500" />
+                <p className="text-sm font-medium text-green-700 dark:text-green-400">{activeScenario.after.timeImpact}</p>
+              </div>
+            </div>
+          </Card>
+        </div>
+        
+        {/* Progress indicators - timeline representation */}
+        <div className="mt-12 max-w-3xl mx-auto">
+          <div className="flex items-center justify-between p-4 mb-6 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+            <div className="flex items-center">
+              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+              <Separator className="w-12 sm:w-20 h-[2px] bg-gradient-to-r from-red-500 to-amber-500" />
+              <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
+              <Separator className="w-12 sm:w-20 h-[2px] bg-gradient-to-r from-amber-500 to-green-500" />
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+            </div>
+            <p className="text-sm font-medium text-gray-600 dark:text-gray-300">
+              Typical transformation timeline: <span className="text-brand-green">3-6 months</span>
+            </p>
+          </div>
         </div>
 
         <div className="mt-12 text-center">
