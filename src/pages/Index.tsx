@@ -28,15 +28,15 @@ const Index = () => {
     <main className={`min-h-screen overflow-x-hidden ${isLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500 dark:bg-gray-900 dark:text-white`}>
       <Navbar />
       <Hero />
-      <About />
       <WhyNow />
-      <Services />
       <BeforeAfter />
+      <IdealClient />
+      <Services />
       <Process />
       <Methodology />
-      <AboutMe />
-      <IdealClient />
       <Testimonials />
+      <About />
+      <AboutMe />
       <Footer />
       <FloatingCallButton />
       <BackToTop />
