@@ -1,5 +1,5 @@
 
-import { CheckCircle2, Compass, Users, LineChart, ArrowRight } from "lucide-react";
+import { CheckCircle2, Compass, Users, LineChart } from "lucide-react";
 import CTAButtons from "./CTAButtons";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -14,7 +14,7 @@ const Services = () => {
         "Frameworks that scale with your business",
         "Integration with your product roadmap"
       ],
-      outcomes: "Reduce customer acquisition costs by 15-25% through improved retention and referrals.",
+      outcomes: "Reduce customer acquisition costs through improved retention and referrals.",
       bestFor: "Startups preparing for growth or companies experiencing retention issues.",
       chipText: "Strategy",
       chipClass: "chip-primary",
@@ -29,7 +29,7 @@ const Services = () => {
         "Process development & optimization",
         "Leadership training & mentoring"
       ],
-      outcomes: "Free up to 30% of founder/executive time previously spent on customer issues.",
+      outcomes: "Free up significant founder/executive time previously spent on customer issues.",
       bestFor: "Founders who are currently handling most customer interactions personally.",
       chipText: "Team Building",
       chipClass: "chip-secondary",
@@ -44,7 +44,7 @@ const Services = () => {
         "Experience audits & recommendations",
         "Metrics definition & analytics setup"
       ],
-      outcomes: "Increase customer lifetime value by 20-40% through improved retention and upsells.",
+      outcomes: "Increase customer lifetime value through improved retention and upsells.",
       bestFor: "Companies with a growing customer base but increasing churn or support issues.",
       chipText: "Optimization",
       chipClass: "chip-accent",
@@ -98,13 +98,8 @@ const Services = () => {
               <CardFooter className="flex flex-col items-start pt-0">
                 <div className="w-full">
                   <h4 className="text-sm font-bold uppercase text-muted-foreground mb-1">Best For</h4>
-                  <p className="text-sm mb-4">{service.bestFor}</p>
+                  <p className="text-sm">{service.bestFor}</p>
                 </div>
-                
-                <a href="#why-now" className="text-brand-green dark:text-brand-green font-medium text-sm flex items-center group">
-                  Learn how this addresses your challenges
-                  <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                </a>
               </CardFooter>
             </Card>
           ))}
