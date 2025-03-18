@@ -3,8 +3,6 @@ import { useState } from "react";
 import CTAButtons from "./CTAButtons";
 import { Card } from "@/components/ui/card";
 import { TrendingDown, TrendingUp, AlertCircle, CheckCircle, Clock } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
-import { Skeleton } from "@/components/ui/skeleton";
 
 const BeforeAfter = () => {
   const [activeTab, setActiveTab] = useState("support");
@@ -36,7 +34,7 @@ const BeforeAfter = () => {
           "Proactive outreach preventing problems before they occur",
           "Clear escalation paths protecting executive focus"
         ],
-        timeImpact: "85% fewer critical escalations"
+        timeImpact: "Fewer critical escalations"
       }
     },
     {
@@ -65,7 +63,7 @@ const BeforeAfter = () => {
           "Streamlined onboarding creating advocates from day one",
           "Customer health scoring identifying expansion opportunities"
         ],
-        timeImpact: "Revenue growth acceleration within 90 days"
+        timeImpact: "Revenue growth acceleration"
       }
     },
     {
@@ -94,7 +92,7 @@ const BeforeAfter = () => {
           "Structured customer feedback informing product decisions",
           "Data-driven roadmap balancing innovation and improvements"
         ],
-        timeImpact: "30-40% increase in development velocity"
+        timeImpact: "Increased development velocity"
       }
     }
   ];
@@ -195,22 +193,6 @@ const BeforeAfter = () => {
               </div>
             </div>
           </Card>
-        </div>
-        
-        {/* Progress indicators - timeline representation */}
-        <div className="mt-12 max-w-3xl mx-auto">
-          <div className="flex items-center justify-between p-4 mb-6 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-            <div className="flex items-center">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              <Separator className="w-12 sm:w-20 h-[2px] bg-gradient-to-r from-red-500 to-amber-500" />
-              <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
-              <Separator className="w-12 sm:w-20 h-[2px] bg-gradient-to-r from-amber-500 to-green-500" />
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-            </div>
-            <p className="text-sm font-medium text-gray-600 dark:text-gray-300">
-              Typical transformation timeline: <span className="text-brand-green">3-6 months</span>
-            </p>
-          </div>
         </div>
 
         <div className="mt-12 text-center">
