@@ -11,7 +11,8 @@ export const navStructure = [
     items: [
       { name: "Why Now", href: "#why-now" },
       { name: "Before & After", href: "#transformation" },
-      { name: "Ideal Client", href: "#ideal-client" }
+      { name: "Ideal Client", href: "#ideal-client" },
+      { name: "Testimonials", href: "#testimonials" }
     ]
   },
   {

@@ -32,7 +32,7 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <section className="py-24 bg-brand-pink-light dark:bg-brand-pink-light/10">
+    <section id="testimonials" className="py-24 bg-brand-pink-light dark:bg-brand-pink-light/10">
       <div className="section-container">
         <div className="section-heading-container">
           <span className="chip chip-accent mb-3">Testimonials</span>
