@@ -28,7 +28,7 @@ const WhyNow = () => {
           <span className="chip chip-primary mb-3">Why Now?</span>
           <h2 className="section-title">The Urgent Need for Early-Stage CX Strategy</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
-            Customer experience issues compound rapidly as you scale—waiting too long creates problems that are far more expensive and difficult to fix.
+            Empowering early-stage founders to fix churn, stabilize product, and grow revenue by solving hurdles like bugs, renewals, and missed upsells.
           </p>
         </div>
 
