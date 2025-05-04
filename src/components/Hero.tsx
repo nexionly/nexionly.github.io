@@ -52,13 +52,13 @@ const Hero = () => {
             <span className="chip chip-primary mb-3">CS Consultancy & Advisory</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Build a <span className="text-brand-pink">Customer Experience That Scales With You.</span>
+            Build a <span className="text-brand-pink">Customer Success That Scales With You.</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             What if you could proactively tackle churn, streamline renewals, and build customer loyalty before they become crises? Get expert guidance designed for early-stage founders navigating the challenges of growth.
           </p>
           <CTAButtons 
-            primaryText="Build Scalable CX" 
+            primaryText="Build Scalable CS" 
             className="justify-center" 
           />
         </div>

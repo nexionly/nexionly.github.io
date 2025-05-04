@@ -11,7 +11,7 @@ interface CTAButtonsProps {
 }
 
 const CTAButtons: React.FC<CTAButtonsProps> = ({
-  primaryText = "Build Scalable CX",
+  primaryText = "Build Scalable CS",
   secondaryText = "Get CS Essentials Checklist",
   className = "",
   arrangement = "horizontal"
@@ -50,7 +50,7 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
         rel="noopener noreferrer"
         className="btn-primary transition-all duration-300 hover:scale-105 z-10 relative group"
         role="button"
-        aria-label="Build Scalable CX with Tomas Williams"
+        aria-label="Build Scalable CS with Tomas Williams"
       >
         <span className="flex items-center justify-center">
           {primaryText}
