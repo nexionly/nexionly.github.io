@@ -11,8 +11,8 @@ interface CTAButtonsProps {
 }
 
 const CTAButtons: React.FC<CTAButtonsProps> = ({
-  primaryText = "Book a 30-Min Call",
-  secondaryText = "Get CX Essentials Checklist",
+  primaryText = "Build Scalable CX",
+  secondaryText = "Get CS Essentials Checklist",
   className = "",
   arrangement = "horizontal"
 }) => {
@@ -50,7 +50,7 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
         rel="noopener noreferrer"
         className="btn-primary transition-all duration-300 hover:scale-105 z-10 relative group"
         role="button"
-        aria-label="Book a 30-minute consultation with Tomas Williams"
+        aria-label="Build Scalable CX with Tomas Williams"
       >
         <span className="flex items-center justify-center">
           {primaryText}
@@ -61,7 +61,7 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
       <button
         onClick={triggerChecklist}
         className="btn-outline transition-all duration-300 hover:scale-105 z-10 relative group"
-        aria-label="Get CX Essentials Checklist"
+        aria-label="Get CS Essentials Checklist"
       >
         <span className="flex items-center justify-center">
           {secondaryText}
