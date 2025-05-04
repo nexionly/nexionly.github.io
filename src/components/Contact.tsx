@@ -44,9 +44,9 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in-left">
             <span className="chip chip-accent mb-3">Get in Touch</span>
-            <h2 className="section-title">Ready to Transform Your Customer Experience?</h2>
+            <h2 className="section-title">Ready to Transform Your Customer Success?</h2>
             <p className="text-muted-foreground mb-8">
-              Let's discuss how I can help your team create exceptional customer experiences that drive growth and loyalty.
+              Let's discuss how I can help your team create exceptional customer outcomes that drive growth and loyalty.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -90,7 +90,7 @@ const Contact = () => {
                 </p>
                 <p className="flex items-center text-sm">
                   <span className="chip chip-secondary mr-2">Newsletter</span>
-                  Subscribe to CX insights
+                  Subscribe to CS insights
                 </p>
               </div>
             </div>

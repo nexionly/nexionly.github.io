@@ -23,17 +23,17 @@ const About = () => {
           <div className="animate-slide-in-right">
             <span className="chip chip-accent mb-3">About Me</span>
             <h2 className="section-title">
-              Transforming Customer Experience for Scale-Up Success
+              Transforming Customer Success for Scale-Up Success
             </h2>
             <p className="mb-6 text-muted-foreground">
-              With over a decade of experience in building and scaling CX teams, I specialize in helping early-stage founders transition from founder-led support to strategic, customer-focused operations.
+              With over a decade of experience in building and scaling CS teams, I specialize in helping early-stage founders transition from founder-led support to strategic, customer-focused operations.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg border border-gray-100 dark:border-gray-700">
-                <h3 className="font-medium text-lg mb-2">Strategic CX Leadership</h3>
+                <h3 className="font-medium text-lg mb-2">Strategic CS Leadership</h3>
                 <p className="text-muted-foreground">
-                  I guide founders in building proactive CX teams that drive growth and customer loyalty.
+                  I guide founders in building proactive CS teams that drive growth and customer loyalty.
                 </p>
               </div>
               

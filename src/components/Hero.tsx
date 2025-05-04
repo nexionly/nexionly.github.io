@@ -49,10 +49,10 @@ const Hero = () => {
       <div className="section-container flex flex-col items-center text-center">
         <div className="max-w-4xl mx-auto animate-fade-up">
           <div className="mb-4">
-            <span className="chip chip-primary mb-3">CX Consultancy & Advisory</span>
+            <span className="chip chip-primary mb-3">CS Consultancy & Advisory</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Is Customer Experience <span className="text-brand-pink">Holding Back Your Growth?</span>
+            Is Customer Success <span className="text-brand-pink">Holding Back Your Growth?</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             I help early-stage founders overcome growing pains of <strong>increased churn</strong>, stacking <strong>bugs</strong>, challenging <strong>renewals</strong>, and missed upsell <strong>opportunities</strong>.

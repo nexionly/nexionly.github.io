@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomas Williams | CS Consultancy & Advisory</title>
+    <meta name="description" content="Helping Early-Stage founders build exceptional customer success strategies that drive growth, adoption, and measurable outcomes." />
+    <meta name="author" content="Tomas Williams" />
+    <meta name="keywords" content="CS consultancy, customer success, early-stage startups, growth strategy, CS advisory, customer outcomes, startup consulting" />
+    
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="fdfa2bdd-9f13-407d-a035-8ca058dab766"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tomaswilliams.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tomaswilliams.com/" />
+    <meta property="og:title" content="Tomas Williams | CS Consultancy & Advisory" />
+    <meta property="og:description" content="Helping Early-Stage founders build exceptional customer success strategies that drive growth, adoption, and measurable outcomes." />
+    <meta property="og:image" content="/lovable-uploads/5aecd010-ee7f-453b-8920-a029e13d6dc5.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tomaswilliams.com/" />
+    <meta property="twitter:title" content="Tomas Williams | CS Consultancy & Advisory" />
+    <meta property="twitter:description" content="Helping Early-Stage founders build exceptional customer success strategies that drive growth, adoption, and measurable outcomes." />
+    <meta property="twitter:image" content="/lovable-uploads/5aecd010-ee7f-453b-8920-a029e13d6dc5.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/lovable-uploads/c70dc170-3220-44d9-a3b1-fcbbea7c82bb.png" />
+    <link rel="apple-touch-icon" href="/lovable-uploads/c70dc170-3220-44d9-a3b1-fcbbea7c82bb.png" />
+    
+    <!-- Web Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#4ade80" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CS Essentials Checklist Popup Script -->
+    <script async data-uid="3666d9f307" src="https://mattegreenmedia.kit.com/3666d9f307/index.js"></script>
+    
+    <!-- Theme script to avoid flash of incorrect theme -->
+    <script>
+      // Check for saved theme preference or use the system preference
+      const userTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      
+      // Set the theme based on the preference
+      const theme = userTheme || systemTheme;
+      
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    
+    <!-- Script for GitHub Pages SPA routing -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

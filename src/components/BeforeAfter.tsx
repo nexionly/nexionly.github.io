@@ -104,9 +104,9 @@ const BeforeAfter = () => {
       <div className="section-container">
         <div className="text-center mb-12">
           <span className="chip chip-secondary mb-3">The Transformation</span>
-          <h2 className="section-title">From Pains to Gains: Your CX Evolution</h2>
+          <h2 className="section-title">From Pains to Gains: Your CS Evolution</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
-            See the concrete differences a strategic CX approach makes to the challenges you're currently facing.
+            See the concrete differences a strategic CS approach makes to the challenges you're currently facing.
           </p>
         </div>
 
