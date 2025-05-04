@@ -7,9 +7,9 @@ const IdealClient = () => {
     "Founders and co-founders of B2B SaaS organizations at the early stages of growth.",
     "Have secured initial funding or are bootstrapping with a focus on scaling their operations and customer base.",
     "Experiencing challenges like increasing customer churn, declining renewal rates, or difficulties in driving upsells.",
-    "Finding that support tickets and customer issues are piling up faster than your team can resolve them.",
+    "Finding that measuring and improving customer outcomes is becoming increasingly challenging as you scale.",
     "Have relied on ad-hoc customer support or founder-led customer success, and recognize you're outgrowing this model.",
-    "Lack internal expertise in building and leading CX teams and need external guidance to avoid costly mistakes."
+    "Lack internal expertise in building and leading CS teams and need external guidance to avoid costly mistakes."
   ];
 
   return (
@@ -38,11 +38,11 @@ const IdealClient = () => {
             <div className="mt-8 pt-6 border-t dark:border-gray-700">
               <h4 className="font-medium mb-3">Ready to Address These Challenges?</h4>
               <p className="text-muted-foreground mb-6">
-                If your company is facing these growing pains, my specialized expertise can help you build a customer experience function that resolves current issues and creates sustainable growth.
+                If your company is facing these growing pains, my specialized expertise can help you build a customer success function that drives measurable outcomes and creates sustainable growth.
               </p>
               <CTAButtons 
                 primaryText="Book a 30-Min Consultation" 
-                secondaryText="Get CX Essentials Checklist"
+                secondaryText="Get CS Essentials Checklist"
               />
             </div>
           </div>

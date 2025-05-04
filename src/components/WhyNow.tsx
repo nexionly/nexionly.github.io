@@ -7,17 +7,17 @@ const WhyNow = () => {
     {
       icon: <TrendingDown className="h-10 w-10 text-brand-pink" />,
       title: "The Churn Crisis",
-      description: "Early-stage companies often face sudden spikes in churn when their ad-hoc support systems break under the weight of scaling. Each lost customer represents vital revenue and future growth potential."
+      description: "Early-stage companies often face sudden spikes in churn when their ad-hoc support systems fail to deliver measurable business outcomes. Each lost customer represents vital revenue and future growth potential."
     },
     {
       icon: <AlertCircle className="h-10 w-10 text-brand-blue" />,
       title: "The Scale-Up Squeeze",
-      description: "As your customer base grows, bugs and support tickets pile up faster than your team can handle them. This drains developer resources and creates a cycle of reactive firefighting instead of proactive growth."
+      description: "As your customer base grows, measuring and ensuring customer outcomes becomes increasingly complex. Without proper success metrics, developer resources get drained on reactive firefighting instead of building value-driving features."
     },
     {
       icon: <DollarSign className="h-10 w-10 text-brand-green" />,
       title: "The Revenue Risk",
-      description: "Without proper CX systems, renewals become uncertain and upsell opportunities are missed. Investors scrutinize these metrics closely, and poor performance can impact your next funding round."
+      description: "Without proper CS systems, renewals become uncertain and upsell opportunities are missed. Investors scrutinize metrics like adoption, health scores, and ROI closely, impacting your next funding round."
     }
   ];
 
@@ -26,9 +26,9 @@ const WhyNow = () => {
       <div className="section-container">
         <div className="text-center mb-16">
           <span className="chip chip-primary mb-3">Why Now?</span>
-          <h2 className="section-title">The Urgent Need for Early-Stage CX Strategy</h2>
+          <h2 className="section-title">The Urgent Need for Early-Stage CS Strategy</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
-            Empowering early-stage founders to fix churn, stabilize product, and grow revenue by solving hurdles like bugs, renewals, and missed upsells.
+            Empowering early-stage founders to fix churn, drive adoption, and grow revenue by focusing on customer outcomes, not just experiences.
           </p>
         </div>
 

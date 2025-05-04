@@ -1,3 +1,4 @@
+
 import { ArrowUp } from "lucide-react";
 
 const Footer = () => {
@@ -19,7 +20,7 @@ const Footer = () => {
               Tomas Williams<span className="text-brand-pink">.</span>
             </div>
             <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-              CX Consultancy & Advisory for Early-Stage Founders
+              CS Consultancy & Advisory for Early-Stage Founders
             </p>
           </div>
           

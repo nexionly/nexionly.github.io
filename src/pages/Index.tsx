@@ -22,6 +22,8 @@ const Index = () => {
 
   useEffect(() => {
     setIsLoaded(true);
+    // Update document title to reflect Customer Success focus
+    document.title = "Tomas Williams | CS Consultancy & Advisory";
   }, []);
 
   return (

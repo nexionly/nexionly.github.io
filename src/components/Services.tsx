@@ -6,46 +6,46 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const Services = () => {
   const services = [
     {
-      title: "CX Strategy Development",
+      title: "CS Strategy Development",
       icon: <Compass className="h-10 w-10 text-brand-green mb-2" />,
-      description: "Create a comprehensive CX roadmap aligned with your business goals and growth trajectory.",
+      description: "Create a comprehensive Customer Success roadmap aligned with your business goals and growth trajectory.",
       benefits: [
-        "Tailored to your company's growth stage",
-        "Frameworks that scale with your business",
+        "Outcome-focused frameworks that scale",
+        "Business impact measurement systems",
         "Integration with your product roadmap"
       ],
-      outcomes: "Reduce customer acquisition costs through improved retention and referrals.",
+      outcomes: "Reduce customer acquisition costs through improved retention, adoption metrics, and measurable ROI.",
       bestFor: "Startups preparing for growth or companies experiencing retention issues.",
       chipText: "Strategy",
       chipClass: "chip-primary",
       gradient: "from-brand-green-light to-white dark:from-brand-green-light/20 dark:to-gray-800/50"
     },
     {
-      title: "Team Building & Transition",
+      title: "CS Team Building & Transition",
       icon: <Users className="h-10 w-10 text-brand-blue mb-2" />,
-      description: "Transform founder-led support into a strategic, customer-focused CX operation.",
+      description: "Transform founder-led support into a strategic, outcome-focused Customer Success operation.",
       benefits: [
-        "Hiring & team structure guidance",
-        "Process development & optimization",
+        "Dedicated CS organization structure",
+        "Outcome achievement processes",
         "Leadership training & mentoring"
       ],
-      outcomes: "Free up significant founder/executive time previously spent on customer issues.",
-      bestFor: "Founders who are currently handling most customer interactions personally.",
+      outcomes: "Free up significant founder/executive time while improving customer business outcomes.",
+      bestFor: "Founders who are currently handling most customer outcome management personally.",
       chipText: "Team Building",
       chipClass: "chip-secondary",
       gradient: "from-brand-blue-light to-white dark:from-brand-blue-light/20 dark:to-gray-800/50"
     },
     {
-      title: "Customer Experience Optimization",
+      title: "Customer Success Optimization",
       icon: <LineChart className="h-10 w-10 text-brand-pink mb-2" />,
-      description: "Identify and resolve friction points in your customer journey to boost loyalty and retention.",
+      description: "Ensure customers achieve their desired business outcomes to boost loyalty and retention.",
       benefits: [
-        "Customer journey mapping",
-        "Experience audits & recommendations",
-        "Metrics definition & analytics setup"
+        "Customer outcome mapping",
+        "Health score development",
+        "ROI and NRR measurement systems"
       ],
-      outcomes: "Increase customer lifetime value through improved retention and upsells.",
-      bestFor: "Companies with a growing customer base but increasing churn or support issues.",
+      outcomes: "Increase customer lifetime value through improved adoption metrics and demonstrated ROI.",
+      bestFor: "Companies with a growing customer base but increasing churn or renewal challenges.",
       chipText: "Optimization",
       chipClass: "chip-accent",
       gradient: "from-brand-pink-light to-white dark:from-brand-pink-light/20 dark:to-gray-800/50"
@@ -59,7 +59,7 @@ const Services = () => {
           <span className="chip chip-accent mb-3">Services</span>
           <h2 className="section-title">How I Can Help Your Business</h2>
           <p className="section-subtitle">
-            Turn customer experience challenges into growth opportunities with specialized consulting tailored for early-stage companies.
+            Turn customer success challenges into growth opportunities with specialized consulting tailored for early-stage companies.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ const Services = () => {
         
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Ready to transform your customer experience from a pain point to a competitive advantage? Let's discuss your specific challenges and build a tailored solution.
+            Ready to transform your customer success strategy from a pain point to a competitive advantage? Let's discuss your specific challenges and build a tailored solution.
           </p>
           <CTAButtons className="justify-center" />
         </div>
