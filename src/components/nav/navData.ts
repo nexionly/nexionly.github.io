@@ -9,19 +9,16 @@ export const navStructure = [
     name: "Why Us",
     type: "dropdown" as const,
     items: [
-      { name: "Why Now", href: "#why-now" },
-      { name: "Before & After", href: "#transformation" },
-      { name: "Ideal Client", href: "#ideal-client" },
-      { name: "Testimonials", href: "#testimonials" }
+      { name: "Is This You?", href: "#is-this-you" },
+      { name: "The Transformation", href: "#transformation" }
     ]
   },
   {
-    name: "Services & Process",
+    name: "Our Program",
     type: "dropdown" as const,
     items: [
-      { name: "Services", href: "#services" },
-      { name: "Process", href: "#process" },
-      { name: "Methodology", href: "#methodology" }
+      { name: "Scale Your Success", href: "#services" },
+      { name: "How It Works", href: "#process" }
     ]
   }
 ];
