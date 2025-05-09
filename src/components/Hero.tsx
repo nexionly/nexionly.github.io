@@ -52,20 +52,20 @@ const Hero = () => {
             <span className="chip chip-primary mb-3">CS Consultancy & Advisory</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Build a <span className="text-brand-pink">Customer Success That Scales With You.</span>
+            Stop Drowning in <span className="text-brand-pink">Manual CS Tasks & Start Scaling Retention</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            What if you could proactively tackle churn, streamline renewals, and build customer loyalty before they become crises? Get expert guidance designed for early-stage founders navigating the challenges of growth.
+            Double Your Proactive Customer Engagement in 90 Days... Without Hiring a Whole New Team or Burning Out Yours.
           </p>
           <CTAButtons 
-            primaryText="Build Scalable CS" 
+            primaryText="Book a Scale Strategy Session" 
             className="justify-center" 
           />
         </div>
       </div>
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
         <button 
-          onClick={() => scrollToSection('why-now')}
+          onClick={() => scrollToSection('is-this-you')}
           className="text-muted-foreground hover:text-brand-pink transition-colors z-10 relative"
           aria-label="Scroll down to why now section"
         >

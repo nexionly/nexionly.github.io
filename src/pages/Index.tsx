@@ -7,9 +7,7 @@ import About from "@/components/About";
 import AboutMe from "@/components/AboutMe";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
-import Methodology from "@/components/Methodology";
 import Testimonials from "@/components/Testimonials";
-import IdealClient from "@/components/IdealClient";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import BackToTop from "@/components/BackToTop";
@@ -23,7 +21,7 @@ const Index = () => {
   useEffect(() => {
     setIsLoaded(true);
     // Update document title to reflect Customer Success focus
-    document.title = "Tomas Williams | CS Consultancy & Advisory";
+    document.title = "Scale Your CS | 90-Day CS Transformation Program";
   }, []);
 
   return (
@@ -32,13 +30,10 @@ const Index = () => {
       <Hero />
       <WhyNow />
       <BeforeAfter />
-      <IdealClient />
       <Services />
       <Process />
-      <Methodology />
       <Testimonials />
       <About />
-      <AboutMe />
       <Footer />
       <FloatingCallButton />
       <BackToTop />

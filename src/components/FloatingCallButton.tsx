@@ -71,7 +71,7 @@ const FloatingCallButton = () => {
         onClick={triggerChecklist}
         className={`btn-secondary shadow-lg rounded-full p-4 transition-all duration-300
           ${showSecondary ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}
-        aria-label="Get CX Essentials Checklist"
+        aria-label="Get CS Essentials Checklist"
       >
         <span className="flex items-center gap-2">
           <CheckCircle size={18} />
@@ -87,12 +87,12 @@ const FloatingCallButton = () => {
           rel="noopener noreferrer"
           className="btn-primary shadow-lg rounded-full p-4 transition-all duration-300
             hover:bg-brand-green-dark hover:scale-110 hover:shadow-xl group"
-          aria-label="Book your CX strategy session with Tomas Williams"
+          aria-label="Book your CS strategy session with Tomas Williams"
           onClick={toggleCTA}
         >
           <span className="flex items-center gap-2">
             <Phone size={18} className="transition-transform duration-300 group-hover:rotate-12" />
-            <span className="hidden sm:inline">Book 30-Min Call</span>
+            <span className="hidden sm:inline">Book Scale Strategy Session</span>
           </span>
         </a>
       </div>
