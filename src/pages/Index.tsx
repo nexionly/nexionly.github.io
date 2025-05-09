@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import About from "@/components/About";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Footer from "@/components/Footer";
@@ -30,7 +29,6 @@ const Index = () => {
       <BeforeAfter />
       <Services />
       <Process />
-      <About />
       <Footer />
       <FloatingCallButton />
       <BackToTop />
