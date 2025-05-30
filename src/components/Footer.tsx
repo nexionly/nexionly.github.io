@@ -43,7 +43,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/tomaswilliamsa/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-brand-pink transition-colors"
+              className="text-sm text-muted-foreground hover:text-brand-pink transition-colors cursor-pointer relative z-10"
             >
               LinkedIn
             </a>
