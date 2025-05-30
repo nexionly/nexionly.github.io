@@ -47,14 +47,6 @@ const Footer = () => {
             >
               LinkedIn
             </a>
-            <a 
-              href="https://tomaswilliamsa.substack.com/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-brand-pink transition-colors"
-            >
-              Newsletter
-            </a>
           </div>
         </div>
       </div>

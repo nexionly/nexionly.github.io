@@ -20,5 +20,10 @@ export const navStructure = [
       { name: "Scale Your Success", href: "#services" },
       { name: "How It Works", href: "#process" }
     ]
+  },
+  {
+    name: "Blog",
+    href: "https://tomaswilliamsa.substack.com/",
+    type: "external" as const
   }
 ];

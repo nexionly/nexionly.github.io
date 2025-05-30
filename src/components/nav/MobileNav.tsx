@@ -10,7 +10,7 @@ interface MobileNavProps {
   navStructure: Array<{
     name: string;
     href?: string;
-    type: "direct" | "dropdown";
+    type: "direct" | "dropdown" | "external";
     items?: Array<{ name: string; href: string }>;
   }>;
   activeDropdown: string | null;

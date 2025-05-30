@@ -6,7 +6,7 @@ interface NavItemProps {
   item: {
     name: string;
     href?: string;
-    type: "direct" | "dropdown";
+    type: "direct" | "dropdown" | "external";
     items?: Array<{ name: string; href: string }>;
   };
   activeDropdown: string | null;
@@ -35,6 +35,23 @@ const NavItem: React.FC<NavItemProps> = ({
           e.preventDefault();
           handleNavItemClick(item.href!);
         }}
+      >
+        {item.name}
+      </a>
+    );
+  }
+
+  if (item.type === "external") {
+    return (
+      <a
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${
+          isMobile
+            ? "py-3 block text-sm font-medium hover:text-brand-pink transition-colors duration-300"
+            : "text-sm font-medium hover:text-brand-pink transition-colors duration-300"
+        }`}
       >
         {item.name}
       </a>
