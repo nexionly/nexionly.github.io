@@ -52,7 +52,10 @@ const Hero = () => {
             <span className="chip chip-primary mb-3">CS Consultancy & Advisory</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Stop Drowning in <span className="text-brand-pink">Manual CS Tasks & Start Scaling Retention</span>
+            <span className="text-black dark:text-white">Stop Drowning in </span>
+            <span className="text-brand-blue dark:text-brand-blue">Manual CS Tasks</span>
+            <span className="text-black dark:text-white"> & </span>
+            <span className="text-brand-pink">Start Scaling Retention</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Double Your Proactive Customer Engagement in 90 Days... Without Hiring a Whole New Team or Burning Out Yours.
