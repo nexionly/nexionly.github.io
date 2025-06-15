@@ -53,7 +53,7 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
         aria-label="Book a Scale Strategy Session with Tomas Williams"
       >
         <span className="flex items-center justify-center">
-          {primaryText}
+          {primaryText} (3 spots left)
           <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </a>

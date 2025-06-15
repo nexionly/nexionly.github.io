@@ -10,6 +10,8 @@ import FloatingCallButton from "@/components/FloatingCallButton";
 import BackToTop from "@/components/BackToTop";
 import WhyNow from "@/components/WhyNow";
 import BeforeAfter from "@/components/BeforeAfter";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   const { toast } = useToast();
@@ -29,6 +31,8 @@ const Index = () => {
       <BeforeAfter />
       <Services />
       <Process />
+      <Testimonials />
+      <FAQ />
       <Footer />
       <FloatingCallButton />
       <BackToTop />

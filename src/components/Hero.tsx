@@ -57,9 +57,19 @@ const Hero = () => {
             <span className="text-black dark:text-white"> & </span>
             <span className="text-brand-pink">Start Scaling Retention</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Double Your Proactive Customer Engagement in 90 Days... Without Hiring a Whole New Team or Burning Out Yours.
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <strong>Double Your Proactive Customer Engagement in 90 Days</strong> and reduce churn by 35%... Without hiring a whole new team or burning out yours.
           </p>
+          <div className="flex items-center justify-center gap-4 mb-8 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span>Only 3 spots left this month</span>
+            </div>
+            <div className="hidden sm:block w-px h-4 bg-border"></div>
+            <div className="flex items-center gap-2">
+              <span>⏰ Free 30-min strategy session</span>
+            </div>
+          </div>
           <CTAButtons 
             primaryText="Book a Scale Strategy Session" 
             className="justify-center" 
