@@ -62,11 +62,6 @@ const Hero = () => {
           </p>
           <div className="flex items-center justify-center gap-4 mb-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span>Only 3 spots left this month</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-border"></div>
-            <div className="flex items-center gap-2">
               <span>⏰ Free 30-min strategy session</span>
             </div>
           </div>
