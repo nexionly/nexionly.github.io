@@ -40,14 +40,14 @@ const Footer = () => {
           </div>
           
           <div className="flex space-x-6">
-            <a 
-              href="/privacy"
+            <Link 
+              to="/privacy"
               className="text-sm text-muted-foreground hover:text-brand-pink transition-colors cursor-pointer relative z-10"
             >
               Privacy Policy
-            </a>
-            <a 
-              href="/terms"
+            </Link>
+            <Link 
+              to="/terms"
               className="text-sm text-muted-foreground hover:text-brand-pink transition-colors cursor-pointer relative z-10"
             >
               Terms of Use
