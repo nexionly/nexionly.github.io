@@ -36,7 +36,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-100 dark:border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {currentYear} Tomas Williams. All rights reserved.
+            © {currentYear} Tomas Williams | Matte Green Media. All rights reserved.
           </div>
           
           <div className="flex space-x-6">
