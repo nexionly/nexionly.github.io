@@ -26,7 +26,7 @@ const Index = () => {
       </section>
 
       <footer className="relative z-10 px-6 py-6 text-center text-[11px] uppercase tracking-[0.25em] text-muted-foreground border-t border-border">
-        &copy; {new Date().getFullYear()} tomas williams
+        &copy; {new Date().getFullYear()} tomas williams / matte green media
       </footer>
     </main>
   );
