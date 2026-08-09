@@ -1,62 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Packet Rush | A tiny browser arcade game</title>
-    <meta name="description" content="Packet Rush: a retro terminal arcade game. Route packets, dodge firewalls, and beat your high score right in the browser." />
+    <title>Packet Runner | A retro terminal platformer</title>
+    <meta name="description" content="Packet Runner: a retro terminal side-scrolling platformer. Jump firewalls, collect data bits, and beat your high score right in the browser." />
     <meta name="author" content="Tomas Williams" />
-    <meta name="keywords" content="browser game, arcade game, snake game, retro terminal game, packet rush" />
-    
+    <meta name="keywords" content="browser game, platformer, retro terminal game, arcade game, packet runner" />
+
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="fdfa2bdd-9f13-407d-a035-8ca058dab766"></script>
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://tomaswilliams.com/" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tomaswilliams.com/" />
-    <meta property="og:title" content="Packet Rush | A tiny browser arcade game" />
-    <meta property="og:description" content="Route packets, dodge firewalls, beat your high score. A retro terminal arcade game." />
+    <meta property="og:title" content="Packet Runner | A retro terminal platformer" />
+    <meta property="og:description" content="Jump firewalls, collect data bits, and beat your high score. A retro terminal side-scrolling platformer." />
     <meta property="og:image" content="/lovable-uploads/79636e39-cc1d-4c83-b889-7d3913c67515.png" />
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://tomaswilliams.com/" />
-    <meta property="twitter:title" content="Packet Rush | A tiny browser arcade game" />
-    <meta property="twitter:description" content="Route packets, dodge firewalls, beat your high score. A retro terminal arcade game." />
+    <meta property="twitter:title" content="Packet Runner | A retro terminal platformer" />
+    <meta property="twitter:description" content="Jump firewalls, collect data bits, and beat your high score. A retro terminal side-scrolling platformer." />
     <meta property="twitter:image" content="/lovable-uploads/79636e39-cc1d-4c83-b889-7d3913c67515.png" />
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/lovable-uploads/c70dc170-3220-44d9-a3b1-fcbbea7c82bb.png" />
     <link rel="apple-touch-icon" href="/lovable-uploads/c70dc170-3220-44d9-a3b1-fcbbea7c82bb.png" />
-    
+
     <!-- Web Manifest -->
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#22e06a" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
     <!-- Theme script to avoid flash of incorrect theme -->
     <script>
       // Check for saved theme preference or use the system preference
       const userTheme = localStorage.getItem('theme');
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      
+
       // Set the theme based on the preference
       const theme = userTheme || systemTheme;
-      
+
       if (theme === 'dark') {
         document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
       }
     </script>
-    
+
     <!-- Script for GitHub Pages SPA routing -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
@@ -71,7 +70,7 @@
       // the single page app to route accordingly.
       (function(l) {
         if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
+          var decoded = l.search.slice(1).split('&').map(function(s) {
             return s.replace(/~and~/g, '&')
           }).join('?');
           window.history.replaceState(null, null,
