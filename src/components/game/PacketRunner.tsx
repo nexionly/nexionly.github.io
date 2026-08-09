@@ -440,6 +440,7 @@ const PacketRunner = () => {
             <button
               onPointerDown={(e) => {
                 e.preventDefault();
+                e.stopPropagation();
                 jump();
               }}
               className="panel px-5 py-3 text-sm font-bold uppercase tracking-widest text-primary active:bg-primary active:text-primary-foreground transition-colors"
