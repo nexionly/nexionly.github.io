@@ -16,9 +16,6 @@ const Index = () => {
       <header className="relative z-10 px-6 pt-10 pb-6 text-center">
         <p className="text-[11px] uppercase tracking-[0.4em] text-muted-foreground mb-2">node online</p>
         <h1 className="text-3xl md:text-4xl font-bold text-primary glow-text tracking-tight">PACKET RUNNER</h1>
-        <p className="mt-2 text-sm text-muted-foreground max-w-md mx-auto">
-          Nothing here but a private server and a small side-scrolling runner. Jump the firewalls, collect the data.
-        </p>
       </header>
 
       <section className="relative z-10 flex-1 px-4 pb-10" aria-label="Packet Runner game">
