@@ -224,6 +224,7 @@ const PacketRunner = () => {
       state.platforms.forEach((p) => (p.x -= move));
       state.obstacles.forEach((o) => (o.x -= move));
       state.coins.forEach((c) => (c.x -= move));
+      state.spawnCursor -= move;
 
       // Generate ahead
       while (state.spawnCursor < CANVAS_WIDTH + SPAWN_MARGIN) {
