@@ -124,7 +124,8 @@ export default {
 				'gradient-shift': 'gradient-shift 3s ease infinite'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif']
+				sans: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+				mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
 			}
 		}
 	},
